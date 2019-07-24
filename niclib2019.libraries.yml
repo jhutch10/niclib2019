@@ -1,0 +1,31 @@
+au-colors:
+    css:
+        theme:
+            assets/css/au-colors-min.css: {}
+
+global-css:
+    css:
+        theme:
+            assets/css/main-min.css: {}
+
+media-queries:
+    css:
+        theme:
+            assets/css/media-queries-min.css: {}
+
+global-js:
+    js:
+        assets/js/main-min.js: {}
+    dependencies:
+        - core/jquery
+
+search-css:
+    css:
+        theme:
+            assets/css/searchbox-min.css: {}
+
+search-js:
+    js:
+        assets/js/searchbox-min.js: {}
+    dependencies:
+        - core/jquery
