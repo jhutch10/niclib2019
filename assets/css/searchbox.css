@@ -1,0 +1,47 @@
+#queryString{
+	width: 80%;
+}
+
+#queryString:focus{
+	border: 2px solid var(--au-orange);
+}
+
+#search-facet{
+	background: var(--au-white);
+}
+
+#search-facet:focus{
+	border: 2px solid var(--au-orange);
+}
+
+.searchLinks{
+	margin: -15em 0 0;
+	text-align: center;
+	text-shadow: 2px 2px #000000;
+}
+
+.searchLinks .table td{
+	border-top: none;
+}
+
+.searchLinks .table a{
+	color: var(--au-white);
+	transition:all 0.15s;
+}
+
+.searchLinks .table a:hover{
+	color: var(--au-orange);
+}
+
+#search-submit{
+	background-color: var(--au-orange);
+	color: var(--au-white);
+	font-weight: bold;
+	border-color: var(--au-orange);
+}
+
+.search-title {
+	margin-bottom: 1em;
+	color: var(--au-white);
+	text-shadow: 2px 2px 6px var(--au-black);
+}
