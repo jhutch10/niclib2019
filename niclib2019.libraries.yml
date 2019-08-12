@@ -29,3 +29,14 @@ search-js:
         assets/js/searchbox-min.js: {}
     dependencies:
         - core/jquery
+
+bootstrap-css:
+    css:
+        theme:
+            assets/bootstrap/css/boostrap.min.css: {}
+
+bootstrap-js:
+    js:
+        assets/boostrap/js/bootstrap.min.js: {}
+    dependencies:
+        - core/jquery

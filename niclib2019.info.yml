@@ -11,3 +11,5 @@ libraries:
     - niclib2019/global-js
     - niclib2019/search-css
     - niclib2019/search-js
+    - niclib2019/bootstrap-css
+    - niclib2019/bootstrap-js
