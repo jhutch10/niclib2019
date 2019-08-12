@@ -1,42 +1,36 @@
-au-colors:
+bootstrap-css:
+    version: 4.2.1
     css:
         theme:
-            assets/css/au-colors-min.css: {}
+            assets/bootstrap/css/bootstrap.min.css: {}
+
+bootstrap-js:
+    version: 4.2.1
+    js:
+        assets/bootstrap/js/bootstrap.min.js: {}
 
 global-css:
     css:
         theme:
+            assets/css/au-colors-min.css: {}
             assets/css/main-min.css: {}
-
-media-queries:
-    css:
-        theme:
             assets/css/media-queries-min.css: {}
+            assets/css/searchbox-min.css: {}
 
 global-js:
     js:
         assets/js/main-min.js: {}
-    dependencies:
-        - core/jquery
-
-search-css:
-    css:
-        theme:
-            assets/css/searchbox-min.css: {}
-
-search-js:
-    js:
         assets/js/searchbox-min.js: {}
     dependencies:
         - core/jquery
 
-bootstrap-css:
+font-awesome:
+    remote: https://fontawesome.com
+    version: 5.7.1
+    license:
+        name: MIT
+        url: https://fontawesome.com/license
+        gpl-compatible: true
     css:
         theme:
-            assets/bootstrap/css/boostrap.min.css: {}
-
-bootstrap-js:
-    js:
-        assets/boostrap/js/bootstrap.min.js: {}
-    dependencies:
-        - core/jquery
+            https://use.fontawesome.com/releases/v5.7.1/css/all.css: {type: external, minified: true}

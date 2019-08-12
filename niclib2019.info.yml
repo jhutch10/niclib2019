@@ -1,15 +1,29 @@
-name: niclib2019
+name: Nicholson Library Theme (update 2019)
 type: theme
 description: '2019 Theme for the Nicholson Library of Anderson University (IN)'
 core: 8.x
 screenshot: logo.png
 
 libraries:
-    - niclib2019/au-colors
-    - niclib2019/global-css
-    - niclib2019/media-queries
-    - niclib2019/global-js
-    - niclib2019/search-css
-    - niclib2019/search-js
     - niclib2019/bootstrap-css
     - niclib2019/bootstrap-js
+    - niclib2019/global-css
+    - niclib2019/global-js
+    - niclib2019/font-awesome
+
+
+regions:
+    content: 'Page content'
+    helpful-links: 'Helpful Library Links'
+    mobile-nav-about: 'Mobile About Navigation Menu'
+    mobile-nav-archives: 'Mobile Archives Navigation Menu'
+    mobile-nav-faculty: 'Mobile Faculty Navigation Menu'
+    mobile-nav-students: 'Mobile Students Navigation Menu'
+    nav-about: 'About Navigation Menu'
+    nav-archives: 'Archives Navigation Menu'
+    nav-faculty: 'Faculty Navigation Menu'
+    nav-faculty-rec-resources: 'Reccomended Resources for Faculty'
+    nav-students: 'Students Navigation Menu'
+    nav-students-rec-resources: 'Recommended Resources for Students'
+    search-help: 'Links Under Search Box'
+    university-links: 'University Links'

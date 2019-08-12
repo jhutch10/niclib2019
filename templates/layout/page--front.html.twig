@@ -1,0 +1,175 @@
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><img src="themes/custom/niclib2019/assets/images/lib-logo-sm.png" alt="Nicholson Library Logo"></a>
+    <a href="hours.php" class="headerHours"><em>code for hours</em></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> Menu
+    </button>
+
+    <div class="main-menu">
+        <div class="justify-content-end">
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+
+                        {{ page.nav-students }}
+
+                        <div class="dropdown-divider"></div>
+                        <h5 class="dropdown-item"><b>Recommended Resources</b></h5>
+
+                        {{ page.nav-students-rec-resources }}
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contact.php">Contact a Librarian</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+
+                        {{ page.nav-faculty }}
+
+                        <div class="dropdown-divider"></div>
+                        <h5 class="dropdown-item"><b>Recommended Resources</b></h5>
+
+                        {{ page.nav-faculty-rec-resources }}
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contact.php">Contact a Librarian</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+
+                        {{ page.nav-archives }}
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contact.php">Contact a Librarian</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+
+                        {{ page.nav-about }}
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contact.php">Contact a Librarian</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mobile-menu collapse" id="navbarSupportedContent">
+        <ul class="mobile-parent-menu">
+            <li class="mobile-menu-item">Students <span class="menu-expand-icon"><i class="fas fa-caret-down"></i></span>
+                <ul class="mobile-child-menu">
+
+                    {{ page.mobile-nav-students }}
+
+                </ul>
+            </li>
+            <li class="mobile-menu-item">Faculty <span class="menu-expand-icon"><i class="fas fa-caret-down"></i></span>
+                <ul class="mobile-child-menu">
+
+                    {{ page.mobile-nav-faculty }}
+
+                </ul>
+            </li>
+            <li class="mobile-menu-item">Archives <span class="menu-expand-icon"><i class="fas fa-caret-down"></i></span>
+                <ul class="mobile-child-menu">
+
+                    {{ page.mobile-nav-archives }}
+
+                </ul>
+            </li>
+            <li class="mobile-menu-item">About <span class="menu-expand-icon"><i class="fas fa-caret-down"></i></span>
+                <ul class="mobile-child-menu">
+
+                    {{ page.mobile-nav-about }}
+
+                </ul>
+            </li>
+            <li class="mobile-menu-item"><a href="contact.php">Contact a Librarian</a></li>
+        </ul>
+    </div>
+
+</nav>
+</header>
+
+<main>
+    <div>
+
+        <!-- Searchbox -->
+        <section class="mainBox box">
+            <div class="libSearch">
+                <!--Main Box-->
+                <!-- New Searchbox code -->
+                <div class="container-fluid">
+                    <h1 class="search-title">Search the Catalog</h1>
+                    <form id="catalog-search" autocomplete="off">
+                        <select id="search-facet" class="form-control-lg">
+                            <option selected value="booksmedia">Books & Media</option>
+                            <option value="articles">Articles</option>
+                            <option value="allfmts">All Formats</option>
+                        </select>
+                        <input name="queryString" id="queryString" class="form-control-lg" type="text" placeholder="Search by Title, Author, Subject or other Keywords" aria-label="Text input with dropdown button">
+                        <button id="search-submit" type="submit" class="btn-lg">Search</button>
+                    </form>
+                </div>
+
+                <!-- Links under Searchbox -->
+                <div class="searchLinks">
+
+                    {{ page.search-help }}
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Databases/LibGuides -->
+        <!-- LibGuides -->
+        <section class="box">
+            <a href="https://libguides.anderson.edu" target="_blank"><div id="researchBox"><h2 class="buttonTitle">RESEARCH GUIDES</h2></div></a>
+        </section>
+
+        <!-- Databases -->
+        <section class="box">
+            <a href="https://libguides.anderson.edu/az.php" target="_blank"><div id="databasesBox"><h2 class="buttonTitle">FIND ARTICLES</h2></div></a>
+        </section>
+
+        <!-- Library News -->
+        <section class="bottomBox box">
+            <a href="http://browzine.com/libraries/137/subjects" target="_blank"><div id="browzineBox"><h2 class="buttonTitle">BROWSE eJOURNALS</h2></div></a>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="footernav">
+        <!-- Library Links -->
+        <div class="left">
+            <nav class="nav flex-column">
+                <h3>Helpful Library Links</h3>
+
+                {{ page.helpful-links }}
+
+            </nav>
+            &nbsp;
+            <p style="font-size:.75em;"><a href="hours.php">code for hours</a></p>
+        </div>
+
+        <!-- University Links -->
+        <div class="right">
+            <nav class="nav flex-column">
+                <h3>University Links</h3>
+
+                {{ page.university-links}}
+
+            </nav>
+        </div>
+    </div>
+</footer>
