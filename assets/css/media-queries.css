@@ -86,6 +86,22 @@
     .box {
         width: 100%;
     }
+
+    #browzineBox{
+        border: none;
+    }
+
+    #databasesBox{
+        border: none;
+    }
+
+    .libSearch{
+        border: none;
+    }
+
+    #researchBox{
+        border: none;
+    }
 }
 
 @media screen and (max-width: 1130px){
