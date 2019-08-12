@@ -2,12 +2,12 @@ bootstrap-css:
     version: 4.2.1
     css:
         theme:
-            assets/bootstrap/css/bootstrap.min.css: {}
+            assets/vendor/bootstrap/css/bootstrap.min.css: {}
 
 bootstrap-js:
     version: 4.2.1
     js:
-        assets/bootstrap/js/bootstrap.min.js: {}
+        assets/vendor/bootstrap/js/bootstrap.min.js: {}
 
 global-css:
     css:
