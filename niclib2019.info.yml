@@ -11,19 +11,18 @@ libraries:
     - niclib2019/global-js
     - niclib2019/font-awesome
 
-
 regions:
     content: 'Page content'
-    helpful-links: 'Helpful Library Links'
-    mobile-nav-about: 'Mobile About Navigation Menu'
-    mobile-nav-archives: 'Mobile Archives Navigation Menu'
-    mobile-nav-faculty: 'Mobile Faculty Navigation Menu'
-    mobile-nav-students: 'Mobile Students Navigation Menu'
-    nav-about: 'About Navigation Menu'
-    nav-archives: 'Archives Navigation Menu'
-    nav-faculty: 'Faculty Navigation Menu'
-    nav-faculty-rec-resources: 'Reccomended Resources for Faculty'
-    nav-students: 'Students Navigation Menu'
-    nav-students-rec-resources: 'Recommended Resources for Students'
-    search-help: 'Links Under Search Box'
-    university-links: 'University Links'
+    helpful_links: 'Helpful Library Links'
+    mobile_nav_about: 'Mobile About Navigation Menu'
+    mobile_nav_archives: 'Mobile Archives Navigation Menu'
+    mobile_nav_faculty: 'Mobile Faculty Navigation Menu'
+    mobile_nav_students: 'Mobile Students Navigation Menu'
+    nav_about: 'About Navigation Menu'
+    nav_archives: 'Archives Navigation Menu'
+    nav_faculty: 'Faculty Navigation Menu'
+    nav_faculty_rec_resources: 'Reccomended Resources for Faculty'
+    nav_students: 'Students Navigation Menu'
+    nav_students_rec_resources: 'Recommended Resources for Students'
+    search_help: 'Links Under Search Box'
+    university_links: 'University Links'

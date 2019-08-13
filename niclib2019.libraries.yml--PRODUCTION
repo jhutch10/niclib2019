@@ -12,15 +12,15 @@ bootstrap-js:
 global-css:
     css:
         theme:
-            assets/css/au-colors.css: {}
-            assets/css/main.css: {}
-            assets/css/media-queries.css: {}
-            assets/css/searchbox.css: {}
+            assets/css/au-colors-min.css: {}
+            assets/css/main-min.css: {}
+            assets/css/media-queries-min.css: {}
+            assets/css/searchbox-min.css: {}
 
 global-js:
     js:
-        assets/js/main.js: {}
-        assets/js/searchbox.js: {}
+        assets/js/main-min.js: {}
+        assets/js/searchbox-min.js: {}
     dependencies:
         - core/jquery
 
