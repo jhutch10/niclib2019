@@ -15,11 +15,11 @@ jQuery(document).ready(function($){
     })
 
     //Check email form and enable submit button when filled out
-    //$('.emailForm textarea').keypress(function(){
-    //    if($('.emailForm #name').val() != '' && $('.emailForm #email').val() != ''){
-    //        $('.submit-button').prop('disabled', false);
-    //    }
-    //})
+    $('.emailForm textarea').keypress(function(){
+        if($('.emailForm #name').val() != '' && $('.emailForm #email').val() != ''){
+            $('.submit-button').prop('disabled', false);
+        }
+    })
 
     //For Mobile navigation
     $(window).resize(function(){
