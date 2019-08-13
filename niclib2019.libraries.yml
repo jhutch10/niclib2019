@@ -21,6 +21,7 @@ global-js:
     js:
         assets/js/main.js: {}
         assets/js/searchbox.js: {}
+        assets/js/nicdate.js: {}
     dependencies:
         - core/jquery
 

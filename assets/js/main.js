@@ -1,18 +1,18 @@
 jQuery(document).ready(function($){
-    //$('dd').hide();
-    //$('dt').click(function(){
+    $('dd').hide();
+    $('dt').click(function(){
         //Expands FAQ Answers
-    //    $(this).next().slideToggle('slow');
+        $(this).next().slideToggle('slow');
 
         //Toggle Plus/Minus icon on FAQ Expansion
-    //    let icon = $(this).find('.expand-icon').children();
+        let icon = $(this).find('.expand-icon').children();
 
-    //    if(icon.hasClass('fa-plus-circle')){
-    //        icon.removeClass('fa-plus-circle').addClass('fa-minus-circle');
-    //    } else {
-    //        icon.removeClass('fa-minus-circle').addClass('fa-plus-circle');
-    //    }
-    //})
+        if(icon.hasClass('fa-plus-circle')){
+            icon.removeClass('fa-plus-circle').addClass('fa-minus-circle');
+        } else {
+            icon.removeClass('fa-minus-circle').addClass('fa-plus-circle');
+        }
+    })
 
     //Check email form and enable submit button when filled out
     //$('.emailForm textarea').keypress(function(){
@@ -48,4 +48,6 @@ jQuery(document).ready(function($){
             icon.removeClass('fa-caret-up').addClass('fa-caret-down');
         }
     })
+
+    $('.displayHours').append(displayHours());
 })

@@ -21,6 +21,7 @@ global-js:
     js:
         assets/js/main-min.js: {}
         assets/js/searchbox-min.js: {}
+        assets/js/nicdate.min.js
     dependencies:
         - core/jquery
 
