@@ -5,3 +5,4 @@ Rough Draft version found at [this repository](https://github.com/NicLib/site-ro
 
 ## Built With
 * Bootstrap v4.2.1
+* jQuery v3.4.1
