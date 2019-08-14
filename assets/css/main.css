@@ -55,6 +55,12 @@ footer{
     clear: both;
 }
 
+.btn{
+    background-color: var(--au-orange);
+    color: var(--au-white);
+    font-weight: bold;
+}
+
 .buttonTitle{
     font-size: 3em;
     color: var(--au-white);

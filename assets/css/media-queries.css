@@ -10,6 +10,12 @@
     }
 }
 
+@media screen and (max-width: 1628px){
+    #queryString{
+        width: 75%;
+    }
+}
+
 @media screen and (max-width: 1610px){
     .libSearch{
         padding-left: 3%;
@@ -36,6 +42,12 @@
 @media screen and (max-width: 1351px){
     .main-menu{
         margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 1323px){
+    #queryString{
+        width: 70%;
     }
 }
 
@@ -128,6 +140,12 @@
     }
 }
 
+@media screen and (max-width: 1073px){
+    #queryString{
+        width: 65%;
+    }
+}
+
 @media screen and (max-width: 1061px){
     #queryString{
         width: 68%;
@@ -161,6 +179,12 @@
 
     .tab-links a{
         padding: 9px 5px;
+    }
+}
+
+@@media screen and (max-width: 1008px) {
+    #queryString{
+        width: 65%;
     }
 }
 
