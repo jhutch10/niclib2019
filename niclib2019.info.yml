@@ -25,4 +25,5 @@ regions:
     nav_students: 'Students Navigation Menu'
     nav_students_rec_resources: 'Recommended Resources for Students'
     search_help: 'Links Under Search Box'
+    site_brand: 'Library Logo'
     university_links: 'University Links'
