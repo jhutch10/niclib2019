@@ -208,6 +208,7 @@ footer{
 
 .questionGroup{
     margin: 1em auto;
+    clear: both;
 }
 
 .right{
