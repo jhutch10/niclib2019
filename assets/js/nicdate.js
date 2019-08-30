@@ -115,7 +115,7 @@ function semesterHours(day){
             operatingHours = '1:30pm - Midnight';
             break;
         case 5:
-            operatingHours = '7:45am - 6:00pm';
+            operatingHours = '7:45am - 5:00pm';
             break;
         case 6:
             operatingHours = '11:00am - 5:00pm';
