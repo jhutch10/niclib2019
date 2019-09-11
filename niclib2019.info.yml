@@ -20,6 +20,7 @@ regions:
     mobile_nav_students: 'Mobile Students Navigation Menu'
     nav_about: 'About Navigation Menu'
     nav_archives: 'Archives Navigation Menu'
+    nav_archives_coll: 'Archives Online Collections and Exhibits'
     nav_faculty: 'Faculty Navigation Menu'
     nav_faculty_rec_resources: 'Reccomended Resources for Faculty'
     nav_students: 'Students Navigation Menu'
