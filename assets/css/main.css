@@ -71,6 +71,12 @@ footer{
     text-shadow: 2px 2px #000000;
 }
 
+.contact-buttons {
+    margin: 1.15em 0;
+    padding: 1.93em 2em;
+    clear: both;
+}
+
 .container nav{
     margin-top: 1em;
 }
