@@ -159,6 +159,10 @@ function midFallBreakHours(day){
     return operatingHours;
 }
 
+function christmasBreakHours(day){
+    //This will determine displayed hours for Christmas break
+}
+
 function displayHours(){
     //Get current date
     var currentDate = new Date();
