@@ -47,7 +47,9 @@ function determineHours(currentDate){
     } else if ((currentDate.getMonth() + 1) == (thanksgivingDay.getMonth() + 1) && currentDate.getDate() == thanksgivingDay.getDate()) {
         return 'Thanksgiving';
     } else if ((currentDate.getMonth() + 1) == (thanksgivingDay.getMonth() + 1) && currentDate.getDate() == thanksgivingDay.getDate() + 1) {
-            return 'Black Friday';
+        return 'Black Friday';
+    } else if ((currentDate.getMonth() + 1) == (thanksgivingDay.getMonth() + 1) && currentDate.getDate() == thanksgivingDay.getDate() + 2) {
+        return 'Saturday after Thanksgiving';
     } else if ((currentDate.getMonth() + 1) == (christmasEve.getMonth() + 1) && currentDate.getDate() == christmasEve.getDate()) {
         return 'Christmas Eve';
     } else if ((currentDate.getMonth() + 1) == (christmasDay.getMonth() + 1) && currentDate.getDate() == christmasDay.getDate()) {
@@ -209,6 +211,7 @@ function displayHours(){
             break;
         case 'Thanksgiving':
         case 'Black Friday':
+        case 'Saturday after Thanksgiving':
             hoursToday = 'Closed for Thanksgiving';
             break;
         case 'Sunday after Thanksgiving':
