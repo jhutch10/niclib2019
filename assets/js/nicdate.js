@@ -1,13 +1,13 @@
 //Function to determine the correct hours to post on website
 
 //Define Regular Holidays
-var newYearsDay = new Date('01/01/2019');
-var mlkDay = new Date('01/21/2019');
-var goodFriday = new Date('04/18/2019');
-var easter = new Date('04/21/2019');
-var memorialDay = new Date('05/27/2019');
-var independence = new Date('07/04/2019');
-var laborDay = new Date('09/02/2019');
+var newYearsDay = new Date('01/01/2020');
+var mlkDay = new Date('01/20/2020');
+var goodFriday = new Date('04/10/2020');
+var easter = new Date('04/12/2020');
+var memorialDay = new Date('05/25/2020');
+var independence = new Date('07/04/2020');
+var laborDay = new Date('09/07/2020');
 var thanksgivingDay = new Date('11/28/2019');
 var christmasEve = new Date('12/24/2019');
 var christmasDay = new Date('12/25/2019');
