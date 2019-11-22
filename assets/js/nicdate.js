@@ -13,10 +13,10 @@ var christmasEve = new Date('12/24/2019');
 var christmasDay = new Date('12/25/2019');
 
 //Spring Semester Dates
-var springSemesterBegin = new Date('01/16/2019'); //First Day of Classes
-var springBreakBegin = new Date('03/16/2019'); //First Saturday of Spring Break
-var springBreakEnd = new Date('03/24/2019'); //Last Sunday of Spring Break
-var springSemesterEnd = new Date('05/10/2019'); //Last Day of Classes
+var springSemesterBegin = new Date('01/15/2020'); //First Day of Classes
+var springBreakBegin = new Date('03/14/2019'); //First Saturday of Spring Break
+var springBreakEnd = new Date('03/22/2019'); //Last Sunday of Spring Break
+var springSemesterEnd = new Date('05/08/2019'); //Last Day of Classes
 
 //Fall Semester Dates
 var fallSemesterBegin = new Date('08/26/2019'); //First Day of Classes
