@@ -27,6 +27,10 @@ var thanksgivingBegin = new Date('11/27/2019'); //Wednesday Before Thanksgiving
 var thanksgivingEnd = new Date('12/1/2019'); //Sunday after Thanksgiving
 var fallSemesterEnd = new Date('12/13/2019'); //Last day of Classes
 
+//Christmas Closing
+var christmasClosingBegin = new Date('12/21/2019'); //First day of closing
+var christmasClosingEnd = newYearsDay; //Last day of closing
+
 function determineHours(currentDate){
     if((currentDate.getMonth() + 1) == (newYearsDay.getMonth() + 1) && currentDate.getDate() == newYearsDay.getDate()){
         return 'New Years Day';
@@ -76,6 +80,8 @@ function determineHours(currentDate){
         return 'Sunday after Thanksgiving';
     } else if (currentDate > fallSemesterEnd){
         return 'break';
+    } else if (currentDate >= christmasClosingBegin && currentDate <= christmasClosingEnd) {
+        return 'Christmas Closing';
     }
 }
 
@@ -159,10 +165,6 @@ function midFallBreakHours(day){
     return operatingHours;
 }
 
-function christmasBreakHours(day){
-    //This will determine displayed hours for Christmas break
-}
-
 function displayHours(){
     //Get current date
     var currentDate = new Date();
@@ -225,6 +227,8 @@ function displayHours(){
         case 'Christmas':
             hoursToday = 'Closed\nMerry Christmas'
             break;
+        case 'Christmas Closing':
+            hoursToday = 'Closed';
         case 'break':
             hoursToday = breakHours(dayOfWeek);
             break;
