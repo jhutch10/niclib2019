@@ -58,7 +58,7 @@ function determineHours(currentDate){
         return 'Christmas Eve';
     } else if ((currentDate.getMonth() + 1) == (christmasDay.getMonth() + 1) && currentDate.getDate() == christmasDay.getDate()) {
         return 'Christmas';
-    } else if(currentDate > newYearsDay && currentDate < springBreakBegin){
+    } else if(currentDate > newYearsDay && currentDate < springSemesterBegin){
         return 'break';
     } else if((currentDate.getMonth() + 1) == (goodFriday.getMonth() + 1) && currentDate.getDate() == (goodFriday.getDate() - 1)) {
         return 'Day Before Good Friday';
@@ -78,7 +78,7 @@ function determineHours(currentDate){
         return 'break';
     } else if ((currentDate.getMonth() + 1) == (thanksgivingEnd.getMonth() + 1) && currentDate.getDate() == thanksgivingEnd.getDate()){
         return 'Sunday after Thanksgiving';
-    } else if (currentDate > fallSemesterEnd){
+    } else if (currentDate > fallSemesterEnd && currentDate.getFullYear() == fallSemesterEnd.getFullYear()){
         return 'break';
     } else if (currentDate >= christmasClosingBegin && currentDate <= christmasClosingEnd) {
         return 'Christmas Closing';
