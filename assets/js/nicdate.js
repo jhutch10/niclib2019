@@ -236,6 +236,20 @@ function displayHours(){
             hoursToday = semesterHours(dayOfWeek);
     }
 
-    return hoursToday;
+    //This has been added because of COVID-19
+    switch(weekday) {
+        case 'Sunday':
+		case 'Saturday':
+            hoursToday = 'Closed';
+            break;
+        default:
+            hoursToday = '8am - 5pm (EDT)';
+    }
+
+
+
+    return 'Library building closed.<br/>Librarians available virtually:<br/>' + hoursToday;
 
 }
+
+console.log(displayHours());
