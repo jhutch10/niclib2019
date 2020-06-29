@@ -242,6 +242,9 @@ function displayHours(){
 		case 'Saturday':
             hoursToday = 'Closed';
             break;
+		case 'Friday':
+			hoursToday = 'Closed for Independence Day';
+			break;
         default:
             hoursToday = '8am - 5pm (EDT)';
     }
