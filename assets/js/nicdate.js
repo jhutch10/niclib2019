@@ -306,7 +306,7 @@ function displayHours() {
 
   console.log(currentDate, determineHours(currentDate));
 
-  return `Today's Hours:\n${hoursToday}`;
+  return 'Today\'s Hours:\n' + hoursToday;
 
   //Uncomment for testing
   //console.log(
@@ -322,5 +322,3 @@ function displayHours() {
 //  let newTestDate = testDate.setDate(testDate.getDate() + 1);
 //  testDate = new Date(newTestDate);
 //}
-
-console.log(displayHours());
