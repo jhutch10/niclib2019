@@ -304,9 +304,9 @@ function displayHours() {
       hoursToday = semesterHours(dayOfWeek);
   }
 
-  console.log(currentDate, determineHours(currentDate));
+  //console.log(currentDate, determineHours(currentDate));
 
-  return 'Today\'s Hours:\n' + hoursToday;
+  return hoursToday;
 
   //Uncomment for testing
   //console.log(
