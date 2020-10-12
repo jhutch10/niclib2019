@@ -321,4 +321,3 @@ function displayHours() {
 //
 //  let newTestDate = testDate.setDate(testDate.getDate() + 1);
 //  testDate = new Date(newTestDate);
-//}
