@@ -23,8 +23,8 @@ var fallSemesterBegin = new Date('08/31/2020'); //First Day of Classes
 var midFallBreakBegin = new Date('10/07/2020'); //Wednesday Before of Mid Fall Break
 var midFallBreakEnd = new Date('10/11/2020'); //Sunday of Mid Fall Break
 var homecoming = new Date('10/17/2020');
-var thanksgivingBegin = new Date('11/25/2020'); //Wednesday Before Thanksgiving
-var thanksgivingEnd = new Date('11/29/2020'); //Sunday after Thanksgiving
+var thanksgivingBegin = new Date('11/24/2020'); //Tuesday Before Thanksgiving
+var thanksgivingEnd = new Date('11/30/2020'); //Monday after Thanksgiving
 var fallSemesterEnd = new Date('12/18/2020'); //Last day of Classes
 
 //Christmas Closing
@@ -73,21 +73,6 @@ function determineHours(currentDate) {
   ) {
     return 'Homecoming';
   } else if (
-    currentDate.getMonth() + 1 == thanksgivingDay.getMonth() + 1 &&
-    currentDate.getDate() == thanksgivingDay.getDate()
-  ) {
-    return 'Thanksgiving';
-  } else if (
-    currentDate.getMonth() + 1 == thanksgivingDay.getMonth() + 1 &&
-    currentDate.getDate() == thanksgivingDay.getDate() + 1
-  ) {
-    return 'Black Friday';
-  } else if (
-    currentDate.getMonth() + 1 == thanksgivingDay.getMonth() + 1 &&
-    currentDate.getDate() == thanksgivingDay.getDate() + 2
-  ) {
-    return 'Saturday after Thanksgiving';
-  } else if (
     currentDate.getMonth() + 1 == christmasEve.getMonth() + 1 &&
     currentDate.getDate() == christmasEve.getDate()
   ) {
@@ -130,14 +115,9 @@ function determineHours(currentDate) {
     return 'Mid Fall Break';
   } else if (
     currentDate >= thanksgivingBegin &&
-    currentDate < thanksgivingEnd
+    currentDate <= thanksgivingEnd
   ) {
-    return 'break';
-  } else if (
-    currentDate.getMonth() + 1 == thanksgivingEnd.getMonth() + 1 &&
-    currentDate.getDate() == thanksgivingEnd.getDate()
-  ) {
-    return 'Sunday after Thanksgiving';
+    return 'Thanksgiving Break';
   } else if (
     currentDate > fallSemesterEnd &&
     currentDate.getFullYear() == fallSemesterEnd.getFullYear()
@@ -230,7 +210,21 @@ function midFallBreakHours(day) {
   return operatingHours;
 }
 
-function displayHours() {
+function thanksgivingBreakHours(day) {
+    var operatingHours;
+
+    switch (day) {
+        case 2:
+            operatingHours = '7:45am - 5:00pm';
+            break;
+        default:
+            operatingHours = 'Closed\nHappy Thanksgiving';
+    }
+
+    return operatingHours;
+}
+
+function displayHours(date) {
   //Get current date
 
   // When testing comment out and uncomment the one below
@@ -283,14 +277,9 @@ function displayHours() {
     case 'Homecoming':
       hoursToday = 'Closed\nHappy Homecoming\nGBGR!';
       break;
-    case 'Thanksgiving':
-    case 'Black Friday':
-    case 'Saturday after Thanksgiving':
-      hoursToday = 'Closed for Thanksgiving';
-      break;
-    case 'Sunday after Thanksgiving':
-      hoursToday = '7:00pm - 11:00pm';
-      break;
+    case 'Thanksgiving Break':
+        hoursToday = thanksgivingBreakHours(dayOfWeek);
+        break;
     case 'Christmas Eve':
     case 'Christmas':
       hoursToday = 'Closed\nMerry Christmas';
