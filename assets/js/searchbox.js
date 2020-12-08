@@ -10,19 +10,26 @@ jQuery(document).ready(function($){
 
         let queryString = $(this).children('#queryString').val();
         let facet = $(this).children('#search-facet').val();
+		let searchType;
 
-        //Database list and formats
-        let databaseList = '';
-        let formats= '';
-        if (facet == 'booksmedia'){
-            databaseList = BOOKS_AND_MEDIA;
-            formats = BOOKS_AND_MEDIA_FORMAT_STRING;
-        } else if (facet ==  'articles') {
-            databaseList = ARTICLES;
-            formats = ARTICLES_FORMAT_STRING;
-        } else if (facet == 'allfmts') {
-            databaseList = BOOKS_AND_MEDIA + ',' + ARTICLES;
+        switch(facet){
+            case 'booksmedia':
+                databaseList = BOOKS_AND_MEDIA;
+                formats = BOOKS_AND_MEDIA_FORMAT_STRING;
+                searchType = 'Books and Media Search';
+                break;
+            case 'articles':
+                databaseList = ARTICLES;
+                formats = ARTICLES_FORMAT_STRING;
+                searchType = 'Articles Search';
+                break;
+            case 'allfmts':
+                databaseList = BOOKS_AND_MEDIA + ',' + ARTICLES;
+                searchType = 'All Formats Search';
+                break;
         }
+		
+		ga('send', 'event', 'Catalog Search', 'Search', searchType);
 
         window.open(DISCOVERY_URL + '&databaseList=' + databaseList + '&queryString=' + queryString + formats, '_blank');
     })
