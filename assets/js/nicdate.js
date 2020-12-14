@@ -13,10 +13,10 @@ var christmasEve = new Date('12/24/2020');
 var christmasDay = new Date('12/25/2020');
 
 //Spring Semester Dates
-var springSemesterBegin = new Date('01/13/2020'); //First Day of Classes
-var springBreakBegin = new Date('03/13/2020'); //First Saturday of Spring Break
-var springBreakEnd = new Date('03/21/2020'); //Last Sunday of Spring Break
-var springSemesterEnd = new Date('05/07/2020'); //Last Day of Classes
+var springSemesterBegin = new Date('01/13/2021'); //First Day of Classes
+var springBreakBegin = new Date('03/13/2021'); //First Saturday of Spring Break
+var springBreakEnd = new Date('03/21/2021'); //Last Sunday of Spring Break
+var springSemesterEnd = new Date('05/07/2021'); //Last Day of Classes
 
 //Fall Semester Dates
 var fallSemesterBegin = new Date('08/31/2020'); //First Day of Classes
@@ -119,15 +119,15 @@ function determineHours(currentDate) {
   ) {
     return 'Thanksgiving Break';
   } else if (
-    currentDate > fallSemesterEnd &&
-    currentDate.getFullYear() == fallSemesterEnd.getFullYear()
-  ) {
-    return 'break';
-  } else if (
     currentDate >= christmasClosingBegin &&
     currentDate <= christmasClosingEnd
   ) {
     return 'Christmas Closing';
+  } else if (
+    currentDate > fallSemesterEnd &&
+    currentDate.getFullYear() == fallSemesterEnd.getFullYear()
+  ) {
+    return 'break';
   }
 }
 
