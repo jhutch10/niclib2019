@@ -50,4 +50,8 @@ jQuery(document).ready(function($){
     })
 
     $('.displayHours').append(displayHours());
+
+    $('#chat-button').click(function(){
+        window.open('/chat', '_self');
+    })
 })

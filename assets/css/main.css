@@ -332,3 +332,11 @@ footer{
     padding: 2em;
     border-top: white solid .25em;
 }
+
+#chat-button{
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    font-weight: bold;
+    border-radius: 1em;
+}
