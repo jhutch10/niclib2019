@@ -52,6 +52,7 @@ jQuery(document).ready(function($){
     $('.displayHours').append(displayHours());
 
     $('#chat-button').click(function(){
+        ga('send', 'event', 'Special Button Click', 'Click', 'Floating Chat Button');
         window.open('/chat', '_self');
     })
 })
