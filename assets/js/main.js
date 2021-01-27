@@ -53,6 +53,6 @@ jQuery(document).ready(function($){
 
     $('#chat-button').click(function(){
         ga('send', 'event', 'Special Button Click', 'Click', 'Floating Chat Button');
-        window.open('/chat', '_self');
+        window.open('/contact', '_self');
     })
 })
