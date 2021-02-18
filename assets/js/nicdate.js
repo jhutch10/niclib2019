@@ -294,7 +294,6 @@ function displayHours(date) {
   }
 
   //console.log(currentDate, determineHours(currentDate));
-  hoursToday = '8:00am - 5:00pm';
   return hoursToday;
 
   //Uncomment for testing
