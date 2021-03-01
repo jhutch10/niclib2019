@@ -25,6 +25,7 @@ jQuery(document).ready(function($){
                 break;
             case 'allfmts':
                 databaseList = BOOKS_AND_MEDIA + ',' + ARTICLES;
+				formats = BOOKS_AND_MEDIA_FORMAT_STRING + ARTICLES_FORMAT_STRING;
                 searchType = 'All Formats Search';
                 break;
         }
