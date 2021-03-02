@@ -292,6 +292,16 @@ function displayHours(date) {
     default:
       hoursToday = semesterHours(dayOfWeek);
   }
+  
+  switch(dayOfWeek){
+	case 4:
+	case 5:
+		hoursToday = '8:00am - 5:00pm';
+		break;
+	case 0:
+		hoursToday = '5:00pm - 11:00pm';
+		break;
+  }
 
   //console.log(currentDate, determineHours(currentDate));
   return hoursToday;
