@@ -292,6 +292,7 @@ function displayHours(date) {
     default:
       hoursToday = semesterHours(dayOfWeek);
   }
+  
 
   //console.log(currentDate, determineHours(currentDate));
   return hoursToday;
