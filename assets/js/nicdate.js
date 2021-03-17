@@ -14,8 +14,8 @@ var christmasDay = new Date('12/25/2020');
 
 //Spring Semester Dates
 var springSemesterBegin = new Date('01/13/2021'); //First Day of Classes
-var springBreakBegin = new Date('03/13/2021'); //First Saturday of Spring Break
-var springBreakEnd = new Date('03/21/2021'); //Last Sunday of Spring Break
+//var springBreakBegin = new Date('03/13/2021'); //First Saturday of Spring Break
+//var springBreakEnd = new Date('03/21/2021'); //Last Sunday of Spring Break
 var springSemesterEnd = new Date('05/07/2021'); //Last Day of Classes
 
 //Fall Semester Dates
@@ -96,14 +96,14 @@ function determineHours(currentDate) {
     return 'Easter Traveling Day';
   } else if (currentDate > goodFriday && currentDate < easter) {
     return 'break';
-  } else if (currentDate >= springBreakBegin && currentDate < springBreakEnd) {
+  } /*else if (currentDate >= springBreakBegin && currentDate < springBreakEnd) {
     return 'break';
   } else if (
     currentDate.getMonth() + 1 == springBreakEnd.getMonth() + 1 &&
     currentDate.getDate() == springBreakEnd.getDate()
   ) {
     return 'End of Spring Break';
-  } else if (
+  }*/ else if (
     currentDate > springSemesterEnd &&
     currentDate < fallSemesterBegin
   ) {
