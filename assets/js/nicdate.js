@@ -1,35 +1,35 @@
 //Function to determine the correct hours to post on website
 
 //Define Regular Holidays
-var newYearsDay = new Date('01/01/2021');
-var mlkDay = new Date('01/18/2021');
-var goodFriday = new Date('04/02/2021');
-var easter = new Date('04/04/2021');
-var memorialDay = new Date('05/31/2021');
-var independence = new Date('07/04/2021');
-var laborDay = new Date('09/07/2020');
-var thanksgivingDay = new Date('11/26/2020');
-var christmasEve = new Date('12/24/2020');
-var christmasDay = new Date('12/25/2020');
-
-//Spring Semester Dates
-var springSemesterBegin = new Date('01/13/2021'); //First Day of Classes
-//var springBreakBegin = new Date('03/13/2021'); //First Saturday of Spring Break
-//var springBreakEnd = new Date('03/21/2021'); //Last Sunday of Spring Break
-var springSemesterEnd = new Date('05/07/2021'); //Last Day of Classes
+var laborDay = new Date('09/06/2021');
+var thanksgivingDay = new Date('11/25/2021');
+var christmasEve = new Date('12/24/2021');
+var christmasDay = new Date('12/25/2021');
+var newYearsDay = new Date('01/01/2022');
+var mlkDay = new Date('01/17/2022');
+var goodFriday = new Date('04/15/2022');
+var easter = new Date('04/17/2022');
+var memorialDay = new Date('05/30/2022');
+var independence = new Date('07/04/2022');
 
 //Fall Semester Dates
-var fallSemesterBegin = new Date('08/31/2020'); //First Day of Classes
-var midFallBreakBegin = new Date('10/07/2020'); //Wednesday Before of Mid Fall Break
-var midFallBreakEnd = new Date('10/11/2020'); //Sunday of Mid Fall Break
-var homecoming = new Date('10/17/2020');
-var thanksgivingBegin = new Date('11/24/2020'); //Tuesday Before Thanksgiving
-var thanksgivingEnd = new Date('11/30/2020'); //Monday after Thanksgiving
-var fallSemesterEnd = new Date('12/18/2020'); //Last day of Classes
+var fallSemesterBegin = new Date('08/30/2021'); //First Day of Classes
+var midFallBreakBegin = new Date('10/13/2021'); //Wednesday Before of Mid Fall Break
+var midFallBreakEnd = new Date('10/17/2021'); //Sunday of Mid Fall Break
+var homecoming = new Date('10/09/2021');
+var thanksgivingBegin = new Date('11/23/2021'); //Tuesday Before Thanksgiving
+var thanksgivingEnd = new Date('11/29/2021'); //Monday after Thanksgiving
+var fallSemesterEnd = new Date('12/18/2021'); //Last day of Classes
 
 //Christmas Closing
-var christmasClosingBegin = new Date('12/23/2020'); //First day of closing
+var christmasClosingBegin = new Date('12/23/2021'); //First day of closing
 var christmasClosingEnd = newYearsDay; //Last day of closing
+
+//Spring Semester Dates
+var springSemesterBegin = new Date('01/12/2022'); //First Day of Classes
+var springBreakBegin = new Date('03/12/2022'); //First Saturday of Spring Break
+var springBreakEnd = new Date('03/20/2022'); //Last Sunday of Spring Break
+var springSemesterEnd = new Date('05/06/2022'); //Last Day of Classes
 
 function determineHours(currentDate) {
   if (
@@ -96,15 +96,15 @@ function determineHours(currentDate) {
     return 'Easter Traveling Day';
   } else if (currentDate > goodFriday && currentDate < easter) {
     return 'break';
-  } /*else if (currentDate >= springBreakBegin && currentDate < springBreakEnd) {
+  } else if (currentDate >= springBreakBegin && currentDate < springBreakEnd) {
     return 'break';
   } else if (
     currentDate.getMonth() + 1 == springBreakEnd.getMonth() + 1 &&
     currentDate.getDate() == springBreakEnd.getDate()
   ) {
     return 'End of Spring Break';
-  }*/ else if (
-    currentDate > springSemesterEnd &&
+  } else if (
+    currentDate > springSemesterEnd ||
     currentDate < fallSemesterBegin
   ) {
     return 'break';
@@ -228,8 +228,8 @@ function displayHours(date) {
   //Get current date
 
   // When testing comment out and uncomment the one below
-  var currentDate = new Date();
-  //var currentDate = date;
+  //var currentDate = new Date();
+  var currentDate = date;
 
   //Get current year, month, day of month, and day of week
   var year = currentDate.getFullYear();
@@ -295,18 +295,19 @@ function displayHours(date) {
   
 
   //console.log(currentDate, determineHours(currentDate));
-  return hoursToday;
+  //return hoursToday;
 
   //Uncomment for testing
-  //console.log(
-  //  `${month}/${dayOfMonth} (${determineHours(currentDate)})= ${hoursToday}`
-  //);
+  console.log(
+    `${month}/${dayOfMonth} (${determineHours(currentDate)})= ${hoursToday}`
+  );
 }
 
 // Testing through Date range
-//let testDate = new Date();
-//while (testDate < independence) {
-//  displayHours(testDate);
-//
-//  let newTestDate = testDate.setDate(testDate.getDate() + 1);
-//  testDate = new Date(newTestDate);
+let testDate = new Date();
+while (testDate < independence) {
+  displayHours(testDate);
+
+  let newTestDate = testDate.setDate(testDate.getDate() + 1);
+  testDate = new Date(newTestDate);
+}
