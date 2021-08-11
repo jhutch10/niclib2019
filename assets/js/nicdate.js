@@ -260,7 +260,7 @@ function displayHours(date) {
       hoursToday = 'Closed for Easter';
       break;
     case 'Easter Traveling Day':
-      hoursToday = '8:00am - Midnight';
+      hoursToday = '8:00am - 11:00pm';
       break;
     case 'Memorial Day':
       hoursToday = 'Closed for Memorial Day';
