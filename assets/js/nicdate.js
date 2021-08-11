@@ -228,8 +228,8 @@ function displayHours(date) {
   //Get current date
 
   // When testing comment out and uncomment the one below
-  //var currentDate = new Date();
-  var currentDate = date;
+  var currentDate = new Date();
+  //var currentDate = date;
 
   //Get current year, month, day of month, and day of week
   var year = currentDate.getFullYear();
@@ -298,16 +298,16 @@ function displayHours(date) {
   //return hoursToday;
 
   //Uncomment for testing
-  console.log(
-    `${month}/${dayOfMonth} (${determineHours(currentDate)})= ${hoursToday}`
-  );
+  //console.log(
+  //  `${month}/${dayOfMonth} (${determineHours(currentDate)})= ${hoursToday}`
+  //);
 }
 
 // Testing through Date range
-let testDate = new Date();
-while (testDate < independence) {
-  displayHours(testDate);
-
-  let newTestDate = testDate.setDate(testDate.getDate() + 1);
-  testDate = new Date(newTestDate);
-}
+//let testDate = new Date();
+//while (testDate < independence) {
+//  displayHours(testDate);
+//
+//  let newTestDate = testDate.setDate(testDate.getDate() + 1);
+//  testDate = new Date(newTestDate);
+//}
