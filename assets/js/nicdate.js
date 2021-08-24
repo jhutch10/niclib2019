@@ -321,7 +321,7 @@ function displayHours(date) {
   
 
   //console.log(currentDate, determineHours(currentDate));
-  //return hoursToday;
+  return hoursToday;
 
   //Uncomment for testing
   //console.log(
