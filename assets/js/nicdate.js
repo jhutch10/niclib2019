@@ -19,6 +19,7 @@ var midFallBreakEnd = new Date('10/17/2021'); //Sunday of Mid Fall Break
 var homecoming = new Date('10/09/2021');
 var thanksgivingBegin = new Date('11/23/2021'); //Tuesday Before Thanksgiving
 var thanksgivingEnd = new Date('11/29/2021'); //Monday after Thanksgiving
+var fallExtendedHoursBegin = new Date('12/05/2021'); //Begin Extended Hours
 var fallSemesterEnd = new Date('12/18/2021'); //Last day of Classes
 
 //Christmas Closing
@@ -119,6 +120,11 @@ function determineHours(currentDate) {
   ) {
     return 'Thanksgiving Break';
   } else if (
+    currentDate >= fallExtendedHoursBegin && 
+    currentDate < fallSemesterEnd
+  ) {
+    return 'Extended Hours';
+  } else if (
     currentDate >= christmasClosingBegin &&
     currentDate <= christmasClosingEnd
   ) {
@@ -169,13 +175,13 @@ function semesterHours(day) {
       operatingHours = '1:30pm - 11:00pm';
       break;
     case 5:
-      operatingHours = '7:45am - 5:00pm';
+      operatingHours = '8am - 5:00pm';
       break;
     case 6:
       operatingHours = 'Closed';
       break;
     default:
-      operatingHours = '7:45am - 11:00pm';
+      operatingHours = '8am - 11:00pm';
   }
 
   return operatingHours;
@@ -222,6 +228,23 @@ function thanksgivingBreakHours(day) {
     }
 
     return operatingHours;
+}
+
+function endOfSemesterExtendedHours(day){
+  var operatingHours;
+
+  switch(day){
+    case 0:
+      operatingHours = '1:30pm - Midnight';
+      break;
+    case 6:
+      operatingHours = '11am - 6pm';
+      break;
+    default:
+      operatingHours = '8am - Midnight';
+  }
+
+  return operatingHours;
 }
 
 function displayHours(date) {
@@ -289,13 +312,16 @@ function displayHours(date) {
     case 'break':
       hoursToday = breakHours(dayOfWeek);
       break;
+    case 'Extended Hours':
+      hoursToday = endOfSemesterExtendedHours(dayOfWeek);
+      break;
     default:
       hoursToday = semesterHours(dayOfWeek);
   }
   
 
   //console.log(currentDate, determineHours(currentDate));
-  return hoursToday;
+  //return hoursToday;
 
   //Uncomment for testing
   //console.log(
@@ -305,7 +331,7 @@ function displayHours(date) {
 
 // Testing through Date range
 //let testDate = new Date();
-//while (testDate < independence) {
+//while (testDate < christmasDay) {
 //  displayHours(testDate);
 //
 //  let newTestDate = testDate.setDate(testDate.getDate() + 1);
