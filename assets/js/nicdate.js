@@ -309,6 +309,7 @@ function displayHours(date) {
       break;
     case 'Christmas Closing':
       hoursToday = 'Closed';
+      break;
     case 'break':
       hoursToday = breakHours(dayOfWeek);
       break;
