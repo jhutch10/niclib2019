@@ -8,4 +8,5 @@ Rough Draft version found at [this repository](https://github.com/NicLib/site-ro
 * jQuery v3.4.1
 
 
-## UPDATING TO DRUPAL 9
+## UPDATED FOR DRUPAL 9
+Confirmed Working on 9.2.6
