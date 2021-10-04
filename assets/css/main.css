@@ -22,7 +22,7 @@ a:hover{
 footer{
     margin-bottom: 1em;
     padding: 1em;
-    border-top: .1em solid var(--au-orange);
+    border-top: .25em solid var(--au-orange);
     clear: both;
 }
 
@@ -32,7 +32,7 @@ footer{
 }
 
 .box{
-    width: 50%;
+    width: 33.33%;
     height: 20em;
     float: left;
 }
@@ -150,7 +150,7 @@ footer{
 }
 
 .headerHours{
-    font-size: .5em;
+    font-size: .6em;
 }
 
 .job-title{
@@ -174,7 +174,7 @@ footer{
     background-repeat: no-repeat;
     padding-top: 10em;
     padding-left: 5%;
-    border-bottom: white solid .25em;
+    border-bottom: var(--au-gray) solid .2em;
 }
 
 .mainBox{
@@ -260,7 +260,7 @@ footer{
 }
 
 .submit-button{
-    background-color: var(--au-orange);
+    background-color: transparent;
     color: var(--au-white);
     font-weight: bold;
     border: 3px solid var(--au-orange);
@@ -271,7 +271,7 @@ footer{
 }
 
 .submit-button disabled{
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 .table td, .table th{
@@ -308,9 +308,8 @@ footer{
     background-position: 0% 40%;
     background-repeat: no-repeat;
     padding: 2em;
-    border-bottom: white solid .25em;
-    border-right: white solid .25em;
-    border-top: white solid .25em;
+    border-right: var(--au-gray) solid .15em;
+	text-align: center;
 }
 
 #researchBox{
@@ -319,9 +318,9 @@ footer{
     background-position: 100% 90%;
     background-repeat: no-repeat;
     padding: 2em;
-    border-bottom: white solid .25em;
-    border-left: white solid .25em;
-    border-top: white solid .25em;
+    border-left: var(--au-gray) solid .15em;
+	border-right: var(--au-gray) solid .15em;
+	text-align: center
 }
 
 #browzineBox{
@@ -330,7 +329,8 @@ footer{
     background-repeat: no-repeat;
     background-position-y: 53%;
     padding: 2em;
-    border-top: white solid .25em;
+    border-left: var(--au-gray) solid .15em;
+	text-align: center
 }
 
 #chat-button{
