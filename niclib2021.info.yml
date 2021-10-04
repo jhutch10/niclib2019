@@ -1,0 +1,31 @@
+name: Nicholson Library Theme (update 2021-2)
+type: theme
+description: '2021 Theme for the Nicholson Library of Anderson University (IN)'
+base theme: false
+core_version_requirement: ^8 || ^9
+screenshot: logo.png
+
+libraries:
+    - niclib2021/bootstrap-css
+    - niclib2021/bootstrap-js
+    - niclib2021/global-css
+    - niclib2021/global-js
+    - niclib2021/font-awesome
+
+regions:
+    content: 'Page content'
+    helpful_links: 'Helpful Library Links'
+    mobile_nav_about: 'Mobile About Navigation Menu'
+    mobile_nav_archives: 'Mobile Archives Navigation Menu'
+    mobile_nav_faculty: 'Mobile Faculty Navigation Menu'
+    mobile_nav_students: 'Mobile Students Navigation Menu'
+    nav_about: 'About Navigation Menu'
+    nav_archives: 'Archives Navigation Menu'
+    nav_archives_coll: 'Archives Online Collections and Exhibits'
+    nav_faculty: 'Faculty Navigation Menu'
+    nav_faculty_rec_resources: 'Reccomended Resources for Faculty'
+    nav_students: 'Students Navigation Menu'
+    nav_students_rec_resources: 'Recommended Resources for Students'
+    search_help: 'Links Under Search Box'
+    site_brand: 'Library Logo'
+    university_links: 'University Links'
