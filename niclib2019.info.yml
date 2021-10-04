@@ -6,11 +6,11 @@ core_version_requirement: ^8 || ^9
 screenshot: logo.png
 
 libraries:
-    - niclib2019/bootstrap-css
-    - niclib2019/bootstrap-js
-    - niclib2019/global-css
-    - niclib2019/global-js
-    - niclib2019/font-awesome
+    - niclib2021/bootstrap-css
+    - niclib2021/bootstrap-js
+    - niclib2021/global-css
+    - niclib2021/global-js
+    - niclib2021/font-awesome
 
 regions:
     content: 'Page content'
