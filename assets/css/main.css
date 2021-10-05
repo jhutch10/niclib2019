@@ -315,6 +315,7 @@ footer{
 	width: 33.333%;
     height: 20em;
     float: left;
+	box-sizing: border-box;
 }
 
 #researchBox{
@@ -329,6 +330,7 @@ footer{
 	width: 33.333%;
     height: 20em;
     float: left;
+	box-sizing: border-box;
 }
 
 #browzineBox{
@@ -342,6 +344,7 @@ footer{
 	width: 33.333%;
     height: 20em;
     float: left;
+	box-sizing: border-box;
 }
 
 #chat-button{
