@@ -1,6 +1,6 @@
-name: Nicholson Library Theme (update 2021-3)
+name: Nicholson Library Theme (update 2021-4)
 type: theme
-description: 'Updated 2021 Theme for the Nicholson Library of Anderson University (IN)'
+description: 'Updated 2021 Theme for the Nicholson Library of Anderson University (IN) v4'
 base theme: false
 core_version_requirement: ^8 || ^9
 screenshot: logo.png
