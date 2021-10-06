@@ -32,7 +32,7 @@ footer{
 }
 
 .box{
-    width: 33.33%;
+    width: 33.333%;
     height: 20em;
     float: left;
 }
@@ -312,7 +312,6 @@ footer{
     padding: 2em;
     border-right: var(--au-gray) solid .15em;
 	text-align: center;
-	width: 33.333%;
     height: 20em;
     float: left;
 	box-sizing: border-box;
@@ -327,7 +326,6 @@ footer{
     border-left: var(--au-gray) solid .15em;
 	border-right: var(--au-gray) solid .15em;
 	text-align: center;
-	width: 33.333%;
     height: 20em;
     float: left;
 	box-sizing: border-box;
@@ -341,7 +339,6 @@ footer{
     padding: 2em;
     border-left: var(--au-gray) solid .15em;
 	text-align: center;
-	width: 33.333%;
     height: 20em;
     float: left;
 	box-sizing: border-box;
