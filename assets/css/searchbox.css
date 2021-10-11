@@ -34,7 +34,7 @@
 }
 
 #search-submit{
-	background-color: var(--au-orange);
+	background-color: transparent;
 	color: var(--au-white);
 	font-weight: bold;
 	border-color: var(--au-orange);

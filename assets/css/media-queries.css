@@ -97,6 +97,7 @@
 @media screen and (max-width: 1141px) {
     .box {
         width: 100%;
+		height: 8em;
     }
 
     #browzineBox{
@@ -104,10 +105,6 @@
     }
 
     #databasesBox{
-        border: none;
-    }
-
-    .libSearch{
         border: none;
     }
 
@@ -225,6 +222,10 @@
     .searchLinks{
         display: none;
     }
+	
+	.buttonTitle {
+		font-size: 2em;
+	}
 }
 
 @media screen and (max-width: 975px){
