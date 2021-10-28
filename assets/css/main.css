@@ -179,6 +179,7 @@ footer{
     background-repeat: no-repeat;
     padding-top: 10em;
     padding-left: 5%;
+	padding-right: 3%;
     border-bottom: var(--au-orange) solid .25em;
 	height: 30em;
 }
@@ -350,6 +351,22 @@ footer{
     position: fixed;
     bottom: 2em;
     right: 2em;
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+#lang-button-en{
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+#lang-button-es{
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
     font-weight: bold;
     border-radius: 1em;
 }

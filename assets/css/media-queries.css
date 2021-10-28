@@ -111,6 +111,10 @@
     #researchBox{
         border: none;
     }
+	
+	.form-inline {
+		flex-flow: row wrap;
+	}
 }
 
 @media screen and (max-width: 1130px){
