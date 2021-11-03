@@ -1,5 +1,5 @@
 # Theme for the Nicholson Library of Anderson University (IN)
-Drupal 9 theme for a 2021 update to website.
+Drupal 9 theme for the 2021 update to website.
 Now featuring Spanish on /es!
 
 ## Built With

@@ -4,8 +4,7 @@ const ARTICLES = '638,1271,1275,1279,1697,1708,1721,1723,1725,1728,1734,1736,183
 const ARTICLES_FORMAT_STRING = "&format=Artchap&format=Encyc";
 const SPANISH = "";
 const SPANISH_FORMAT_STRING = "&changedFacet=language&scope=&language=Spa";
-const ES_EBOOKS = "";
-const ES_EBOOKS_FORMAT_STRING = "&subformat=Book%3A%3Abook_digital&scope=wz%3A1274";
+const ES_EBOOKS_FORMAT_STRING = "&changedFacet=language&scope=wz%3A1274&language=Spa&subformat=Book%3A%3Abook_digital";
 const DISCOVERY_URL = 'https://anderson.on.worldcat.org/v2/search?';
 
 jQuery(document).ready(function($){
@@ -38,9 +37,15 @@ jQuery(document).ready(function($){
 				searchType = 'Spanish Language Only Search';
 				break;
 			case 'es_ebooks':
-				databaseList = BOOKS_AND_MEDIA;
-				formats = SPANISH_FORMAT_STRING + ES_EBOOKS_FORMAT_STRING;
+				databaseList = SPANISH;
+				formats = ES_EBOOKS_FORMAT_STRING;
 				searchType = 'AU Only Spanish eBooks'
+				break;
+			case 'es_articles':
+				databaseList = ARTICLES;
+				formats = SPANISH_FORMAT_STRING + ARTICLES_FORMAT_STRING;
+				searchType = 'Spanish Articles'
+				break;
         }
 		
 		//ga('send', 'event', 'Catalog Search', 'Search', searchType);

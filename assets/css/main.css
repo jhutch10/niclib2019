@@ -3,6 +3,16 @@ body{
     max-width: 100%;
     background-color: var(--au-white);
     font-size: 18pt;
+	padding-top: 5.5em;
+}
+
+header{
+	width: 100%;
+	background: rgba(255,255,255,0.9);
+	position: fixed;
+	top: 0;
+	border-bottom: var(--au-neutral-1) 3px solid;
+	z-index: 6;
 }
 
 a{
@@ -173,7 +183,7 @@ footer{
 }
 
 .libSearch{
-    background-image: url('../images/niclib_doors.jpg');
+    background-image: url('../images/niclib_doors.jpeg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -222,6 +232,10 @@ footer{
 
 .navbar-toggler{
     font-size: 1em;
+}
+
+.navbar-brand {
+	background: rgba(255,255,255,0.10);
 }
 
 .questionGroup{
