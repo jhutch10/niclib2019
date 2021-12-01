@@ -10,8 +10,11 @@ Download and unzip folder, place manually into themes.
 
 ## Changelog
 v2.0.4: Updated to Drupal 9, minor visual changes to three boxes
+
 v2.1.0: Implimented Spanish homepage, fixed contact and hover issues, adjustments on Drupal
+
 v2.2.1: Made header fixed, updated some translations, shrunk image file sizes, converted doors to jpeg, adjustments on Drupal
+
 v2.5.1: Made chat button into chat-box, implimented swapable special events banner (single w/ Drupal block or carousel), updated colors & images, added/updated hover to boxes & menus, improved Spanish search bar visuals, fixed 'focus' on all search box elements, added drop-shadows for depth, added user guide (see below), implimented language select menu, added French home page template, implimented dark/light mode w/ remember feature, adjustments on Drupal
 
 # User Guide
@@ -29,6 +32,7 @@ Searches for articles, chapters, and encyclopedia articles/entries.
 Searches all of the above. Once in WorldCat, under format, there is an all button that searches a few additional format types that aren’t included in the list however a most materials are covered by this option.
 The search bar, located in the center of the section, is where users type their search/query request. While any mix of alphanumeric text and special characters are allowed, it is required that something be input for the search to function. Users are blocked from searching with “empty” search bars (the gray sample “Search by…” text is factored as blank) as that would return an error from WorldCat. Users may hit the Enter key, if the search bar is selected (highlighted by orange outline), or click the Submit button to search.
 The Submit button, located to the right of the search bar, sends search queries to the WorldCat catalog. It will not function if there is no text in the search bar.
+
 Beneath the search bar are four links: 
 * “Renew My Items”
 This accesses a user’s WorldCat account page, from which they can manage checked out books.
@@ -62,9 +66,11 @@ This links to the full alphabetically organized list of databases subscribed to 
 This links to a list of courses which when selected displays materials on hold at the library (anderson.on.worldcat.org/courseReserves/landing). Similar to the link of the same located on the home page beneath the search bar.
 * Undergraduate Scholarship
 This links to a page dedicated to Senior theses and speeches alongside other scholarly items produced by students (library.anderson.edu/undergrad-scholarship). On the page is text with one expandable box, and contained within both are links.
+
 Then there is a section heading, which is not interactable, labeled “Recommended Resources” and the option:
 * Browse eJournals
 This links to Anderson University’s Browzine collection (browzine.com/libraries/137/subjects). Here users can select electronic publications to read. Operates like the similarly titled box on the home page.
+
 Last on the menu is the option: 
 * Contact a Librarian
 This links to the contact page (library.anderson.edu/contact), which contains the chat box as well as library phone numbers and addresses.
@@ -82,11 +88,13 @@ This links to the Material Purchase form (library.anderson.edu/faculty/purchasef
 This links to the Equity Grant page (library.anderson.edu/faculty/equity). On this page is information regarding the Equity Grant and proposals for it’s usage. The page comprised primarily of text with a link to a Google Form. Outdated.
 * Interlibrary Loan
 This links to the Interlibrary Loan home page (illiad.anderson.edu). Users must sign-in to access the site.
+
 Then there is a section heading, which is not interactable, labeled “Recommended Resources” and the options:
 * The Chronicle of Higher Education
 This links to a subscription based journal/newspaper. Users may have to sign in to AU’s proxy.
 * The Teaching Profession
 This links to a subscription based journal/newspaper. Users may have to sign in to AU’s proxy.
+
 In the last section of the menu is the option:
 * Contact a Librarian
 This links to the contact page (library.anderson.edu/contact), which contains the chat box as well as library phone numbers and addresses.
@@ -98,6 +106,7 @@ Clicking the text “Archives” in the header displays a drop-down menu which l
 This links to the Archives page (library.anderson.edu/archives). On this page is information regarding what collections the AU archives holds. Contained on this page is text with an expanding table in question-response format which contains external links to the various collections.
 * Research & Copies Information
 This links to the Research page (library.anderson.edu/archives/research). On this page is information regarding accessing and acquiring copies of archival material for research purposes. Contained on this page is text with an expanding table in question-response format which contains an external link for pricing.
+
 In the last section of the menu is the option:
 * Contact a Librarian
 This links to the contact page (library.anderson.edu/contact), which contains the chat box as well as library phone numbers and addresses.
@@ -116,6 +125,7 @@ This links to the Mission and Vision page (library.anderson.edu/mission). On thi
 * York Children’s Literature Festival
 This links to the York Festival’s “home” page (library.anderson.edu/york). On this page is information regarding any upcoming festivals as well as links to previous years’ itineraries and information. This page is comprised of a image banner, some text, and several links.
 * Special Collections
+
 In the last section of the menu is the option:
 * Contact a Librarian
 This links to the contact page (library.anderson.edu/contact), which contains the chat box as well as library phone numbers and addresses.
