@@ -1,6 +1,22 @@
+<lead>
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/css/main.css" id="theme-link">
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/css/media-queries.css">
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/popper.js"></script>
+</lead>
+
+<!-- <lead>
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://libtest.anderson.edu/drupal/drupal-8/themes/custom/niclib2021/assets/css/main.css" id="theme-link">
+<link rel="stylesheet" href="http://libtest.anderson.edu/drupal/drupal-8/themes/custom/niclib2021/assets/css/media-queries.css">
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/popper.js"></script>
+</lead> -->
+
 <header>
 <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="/">{{ page.site_brand }}</a>
+    <a class="navbar-brand" href="/"></a>
     <a href="/hours" class="headerHours"><em>Today's Hours: <span class="displayHours"></span></em></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span> Menu
@@ -10,13 +26,13 @@
         <div class="justify-content-end">
             <ul class="nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-label="Students dropdown menu">
 
                         {{ page.nav_students }}
 
                         <div class="dropdown-divider"></div>
-                        <h5 class="dropdown-item"><b>Recommended Resources</b></h5>
+                        <h5 class="dropdown-RR"><b>Recommended Resources</b></h5>
 
                         {{ page.nav_students_rec_resources }}
 
@@ -25,13 +41,13 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFaculty" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-label="Faculty dropdown menu">
 
                         {{ page.nav_faculty }}
 
                         <div class="dropdown-divider"></div>
-                        <h5 class="dropdown-item"><b>Recommended Resources</b></h5>
+                        <h5 class="dropdown-RR"><b>Recommended Resources</b></h5>
 
                         {{ page.nav_faculty_rec_resources }}
 
@@ -40,19 +56,19 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArchives" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-label="Archives dropdown menu">
 
                         {{ page.nav_archives }}
 
                         <div class="dropdown-divider"></div>
-                        
-                        <a class="dropdown-item" href="contact">Contact a Librarian</a>
+          
+                        <a class="dropdown-item" href="/contact">Contact a Librarian</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-label="About dropdown menu">
 
                         {{ page.nav_about }}
 
@@ -102,14 +118,14 @@
 </header>
 
 <main>
-	<div class="body">
+	<div class="body" style="padding-bottom:1em;">
 
 		{{ page.content }}
 	
 	</div>
 </main>
 
-<footer>
+<footer style="border-top:.25em solid var(--au-orange)">
     <div class="footernav">
         <!-- Library Links -->
         <div class="left">
@@ -133,6 +149,13 @@
             </nav>
         </div>
     </div>
+	<button id="light_switch" class="btn btn-lg">light</button>
 </footer>
 
-<a href="/contact"><button class="btn btn-lg" id="chat-button"><i class="far fa-question-circle"></i> Chat with a Librarian</button></a>
+<overlay>
+	<button id="chat-button" class="btn btn-lg"><i class="far fa-question-circle"></i> Chat with a Librarian</button>
+	<div id="iframeHolder" data-lh3-jid="nicref@chat.libraryh3lp.com"></div>
+	<div class="btn-group dropup">
+		<button type="button" id="light_switch" class="btn btn-secondary"><i class="far fa-lightbulb"></i></button>
+	</div>
+</overlay>

@@ -1,6 +1,21 @@
+<lead>
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/css/main.css" id="theme-link">
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/css/media-queries.css">
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/popper.js"></script>
+</lead>
+
+<!-- <lead>
+<link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://libtest.anderson.edu/drupal/drupal-8/themes/custom/niclib2021/assets/css/main.css" id="theme-link">
+<link rel="stylesheet" href="http://libtest.anderson.edu/drupal/drupal-8/themes/custom/niclib2021/assets/css/media-queries.css">
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://library.anderson.edu/themes/niclib2021/assets/vendor/jquery/popper.js"></script>
+</lead> -->
 <header>
 <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="/">{{ page.site_brand }}</a>
+    <a class="navbar-brand" href="/"></a>
     <a href="/hours" class="headerHours"><em>Today's Hours: <span class="displayHours"></span></em></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span> Menu
@@ -10,13 +25,13 @@
         <div class="justify-content-end">
             <ul class="nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
+                    <div class="dropdown-menu dropdown-menu-lg-left" aria-label="Students dropdown menu">
 
                         {{ page.nav_students }}
 
                         <div class="dropdown-divider"></div>
-                        <h5 class="dropdown-item"><b>Recommended Resources</b></h5>
+                        <h5 class="dropdown-RR"><b>Recommended Resources</b></h5>
 
                         {{ page.nav_students_rec_resources }}
 
@@ -25,13 +40,13 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFaculty" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</a>
+                    <div class="dropdown-menu dropdown-menu-lg-left" aria-label="Faculty dropdown menu">
 
                         {{ page.nav_faculty }}
 
                         <div class="dropdown-divider"></div>
-                        <h5 class="dropdown-item"><b>Recommended Resources</b></h5>
+                        <h5 class="dropdown-RR"><b>Recommended Resources</b></h5>
 
                         {{ page.nav_faculty_rec_resources }}
 
@@ -40,8 +55,8 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArchives" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-label="Archives dropdown menu">
 
                         {{ page.nav_archives }}
 
@@ -51,8 +66,8 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right" aria-label="About dropdown menu">
 
                         {{ page.nav_about }}
 
@@ -117,7 +132,7 @@
                             <option value="articles">Articles</option>
                             <option value="allfmts">All Formats</option>
                         </select>
-                        <input name="queryString" id="queryString" class="form-control-lg" type="text" placeholder="Search by Title, Author, Subject or other Keywords" aria-label="Text input with dropdown button">
+                        <input name="queryString" id="queryString" class="form-control-lg" type="text" required="required" placeholder="Search by Title, Author, Subject or other Keywords" aria-label="Text input with dropdown button">
                         <button id="search-submit" type="submit" class="btn-lg">Search</button>
                     </form>
                 </div>
@@ -134,18 +149,47 @@
         <!-- Databases/LibGuides/Library News -->
         <!-- Databases -->
         <section class="box">
-            <a href="https://libguides.anderson.edu/az.php" target="_blank"><div id="databasesBox"><h2 class="buttonTitle">DATABASES</h2></div></a>
+            <a href="https://libguides.anderson.edu/az.php" rel="noopener" target="_blank"><div id="databasesBox"><h2 class="buttonTitle">DATABASES</h2></div></a>
         </section>
 
         <!-- LibGuides -->
         <section class="box">
-            <a href="https://libguides.anderson.edu" target="_blank"><div id="researchBox"><h2 class="buttonTitle">LIBRARY GUIDES</h2></div></a>
+            <a href="https://libguides.anderson.edu" rel="noopener" target="_blank"><div id="researchBox"><h2 class="buttonTitle">LIBRARY GUIDES</h2></div></a>
         </section>
 
         <!-- Library News -->
         <section class="box">
-            <a href="http://browzine.com/libraries/137/subjects" target="_blank"><div id="browzineBox"><h2 class="buttonTitle">BROWSE eJOURNALS</h2></div></a>
+            <a href="http://browzine.com/libraries/137/subjects" rel="noopener" target="_blank"><div id="browzineBox"><h2 class="buttonTitle">BROWSE eJOURNALS</h2></div></a>
         </section>
+	
+	<!-- For Carousel Banner Uncomment This Section: -->
+		<div id="Events" class="carousel slide" data-ride="carousel" data-interval="10500" data-pause="hover">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://library.anderson.edu/themes/niclib2021/assets/images/event banner.png" alt="event banner 1">
+				</div>
+				<div class="carousel-item">
+					<img src="https://library.anderson.edu/themes/niclib2021/assets/images/event banner2.png" alt="event banner 2">
+				</div>
+				<div class="carousel-item">
+					<img src="https://library.anderson.edu/themes/niclib2021/assets/images/event banner3.png" alt="event banner 3">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#Events" data-slide="prev"></a>
+			<a class="carousel-control-next" href="#Events" data-slide="next"></a>
+		</div>
+	<!-- -->
+
+	<!-- For Single Banner Uncomment This Section:
+		<section class="eventBox" aria-label="An image banner for special events at the library">
+		<div class="specialEvents">
+		
+			{{ page.events }}
+			
+		</div>
+		</section>
+	-->
+		
     </div>
 </main>
 
@@ -175,5 +219,20 @@
     </div>
 </footer>
 
-<a href="/contact"><button class="btn btn-lg" id="chat-button"><i class="far fa-question-circle"></i> Chat with a Librarian</button></a>
-<a href="/es"><button class="btn btn-sm" id="lang-button-es"><i class="fas fa-globe-americas"></i></button></a>
+<overlay>
+	<button id="chat-button" class="btn btn-lg"><i class="far fa-question-circle"></i> Chat with a Librarian</button>
+	<div id="iframeHolder" data-lh3-jid="nicref@chat.libraryh3lp.com"></div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<div class="btn-group dropup">
+		<button type="button" id="light_switch" class="btn btn-secondary"><i class="far fa-lightbulb"></i></button>
+		<button type="button" class="btn btn-secondary dropdown-toggle" id="lang-button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Change Language">
+			<i class="fas fa-globe-americas"></i>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item disabled">English</a></li>
+			<li><a class="dropdown-item" href="/es">Español</a></li>
+			<li><a class="dropdown-item" href="/fr">Français</a></li>
+		</ul>
+	</div>
+</overlay>
+

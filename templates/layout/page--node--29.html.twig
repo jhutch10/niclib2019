@@ -1,4 +1,4 @@
-<!-- ES: node 15 on Test Server, node 25 on Live Server -->
+<!-- FR: node 20 on Test Server, node 29 on Live Server -->
 
 <lead>
 <link rel="stylesheet" href="https://library.anderson.edu/themes/niclib2021/assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
 <header>
 <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="/"></a>
-    <a href="/hours" class="headerHours"><em>Horas de Biblioteca: <span class="displayHours"></span></em></a>
+    <a href="/hours" class="headerHours"><em>Horaires de la Bibliothèque: <span class="displayHours"></span></em></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span> Menu
     </button>
@@ -19,7 +19,7 @@
         <div class="justify-content-end">
             <ul class="nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
                     <div class="dropdown-menu dropdown-menu-lg-right" aria-label="Students dropdown menu">
 
                         {{ page.nav_students }}
@@ -34,7 +34,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFaculty" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</a>
                     <div class="dropdown-menu dropdown-menu-lg-right" aria-label="Faculty dropdown menu">
 
                         {{ page.nav_faculty }}
@@ -49,7 +49,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArchives" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</a>
                     <div class="dropdown-menu dropdown-menu-lg-right" aria-label="Archives dropdown menu">
 
                         {{ page.nav_archives }}
@@ -60,7 +60,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                     <div class="dropdown-menu dropdown-menu-lg-right" aria-label="About dropdown menu">
 
                         {{ page.nav_about }}
@@ -119,15 +119,14 @@
                 <!--Main Box-->
                 <!-- New Searchbox code -->
                 <div class="container-fluid">
-                    <h1 class="search-title">Buscar en Nuestro Catálogo</h1>
+                    <h1 class="search-title">Rechercher le Catalogue</h1>
                     <form class="form-inline" id="catalog-search" autocomplete="off">
                         <select id="search-facet">
-							<option value="spanish">Buscar todo en Español</option>
-							<option selected value="es_ebooks">Libro Electronicos en Español</option>
-							<option value="es_articles">Artículos en Español</option> 
+							<option value="french">Rechercher en Français </option>
+							<option value="fr_articles">Articles en Français </option> 
                         </select>
-                        <input name="queryString" id="queryString" type="text" required="required" placeholder="Buscar por Título, Autor, o Tema" aria-label="Cuadro de texto con botón desplegable">
-                        <button id="search-submit" type="submit">Buscar</button>
+                        <input name="queryString" id="queryString" type="text" required="required" placeholder="Recherche par Titre, Auteur, ou Sujet " aria-label="Champ de recherche de texte">
+                        <button id="search-submit" type="submit">Chercher</button>
                     </form>
                 </div>
 
@@ -136,21 +135,21 @@
                 </div>
             </div>
         </section>
-		
+
         <!-- Databases/LibGuides/Library News -->
         <!-- Databases -->
         <section class="box">
-            <a href="https://libguides-anderson-edu.translate.goog/az.php?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=nui" rel="noopener" target="_blank"><div id="databasesBox"><h2 class="buttonTitle">Lista de Bases de Datos</h2></div></a>
+            <a href="https://libguides-anderson-edu.translate.goog/az.php?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en-US&_x_tr_pto=nui" rel="noopener" target="_blank"><div id="databasesBox"><h2 class="buttonTitle">Liste des Bases de Données</h2></div></a>
         </section>
 
         <!-- LibGuides -->
         <section class="box">
-            <a href="https://libguides-anderson-edu.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=nui" rel="noopener" target="_blank"><div id="researchBox"><h2 class="buttonTitle">Guías de Biblioteca</h2></div></a>
+            <a href="https://libguides-anderson-edu.translate.goog/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en-US&_x_tr_pto=nui" rel="noopener" target="_blank"><div id="researchBox"><h2 class="buttonTitle">Guides de la Bibliothèque </h2></div></a>
         </section>
 
         <!-- Library News -->
         <section class="box">
-            <a href="http://browzine.com/libraries/137/subjects" rel="noopener" target="_blank"><div id="browzineBox"><h2 class="buttonTitle">Explorar Revistas Electrónicas</h2></div></a>
+            <a href="http://browzine.com/libraries/137/subjects" rel="noopener" target="_blank"><div id="browzineBox"><h2 class="buttonTitle">Explorer les Journaux Électroniques </h2></div></a>
         </section>
     </div>
 </main>
@@ -166,7 +165,7 @@
 
             </nav>
             &nbsp;
-            <p style="margin-top:-1.5em; font-size:.75em;"><a href="/hours">Horas de Biblioteca: <span class="displayHours"></span></a></p>
+            <p style="margin-top:-1.5em; font-size:.75em;"><a href="/hours">Horaires de la Bibliothèque: <span class="displayHours"></span></a></p>
         </div>
 
         <!-- University Links -->
@@ -182,7 +181,7 @@
 </footer>
 
 <overlay>
-	<button id="chat-button" class="btn btn-lg"><i class="far fa-question-circle"></i> Hablar con una Bibliotecaria [EN]</button>
+	<button id="chat-button" class="btn btn-lg"><i class="far fa-question-circle"></i> Chattez avec un Bibliothécaire [EN]</button>
 	<div id="iframeHolder" data-lh3-jid="nicref@chat.libraryh3lp.com"></div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<div class="btn-group dropup">

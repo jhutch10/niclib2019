@@ -10,10 +10,14 @@
     }
 }
 
-@media screen and (max-width: 1628px){
+@media screen and (max-width: 1656px){
     #queryString{
-        width: 75%;
+        width: 77%;
     }
+}
+
+@media screen and (max-width: 1628px){
+
 }
 
 @media screen and (max-width: 1610px){
@@ -45,7 +49,7 @@
     }
 }
 
-@media screen and (max-width: 1323px){
+@media screen and (max-width: 1333px){
     #queryString{
         width: 70%;
     }
@@ -96,20 +100,27 @@
 
 @media screen and (max-width: 1141px) {
     .box {
-        width: 100%;
-		height: 8em;
+        width: 100% !important;
+		height: 8em !important;
     }
 
     #browzineBox{
-        border: none;
+        border-left: none;
+		border-right: none;
+		border-top:var(--au-gray) solid .05em;
     }
 
     #databasesBox{
-        border: none;
+        border-left: none;
+		border-right: none;
+		border-bottom:var(--au-gray) solid .05em;
     }
 
     #researchBox{
-        border: none;
+        border-left: none;
+		border-right: none;
+		border-top:var(--au-gray) solid .05em;
+		border-bottom:var(--au-gray) solid .05em;
     }
 	
 	.form-inline {
@@ -127,6 +138,10 @@
     .main-menu{
         margin-left: 0;
     }
+	
+	#queryString{
+        width: 68%;
+    }
 }
 
 @media screen and (max-width: 1090px){
@@ -142,14 +157,18 @@
 }
 
 @media screen and (max-width: 1073px){
-    #queryString{
-        width: 65%;
-    }
+   
 }
 
 @media screen and (max-width: 1061px){
     #queryString{
         width: 68%;
+    }
+}
+
+@media screen and (max-width: 1054px){
+	#queryString{
+        width: 65%;
     }
 }
 
@@ -183,34 +202,30 @@
     }
 }
 
-@@media screen and (max-width: 1008px) {
-    #queryString{
-        width: 65%;
+@media screen and (max-width: 1008px) {
+	.main-menu{
+        display: none;
     }
-}
-
-@media screen and (max-width: 997px){
-    #queryString{
-        width: 65%;
+	
+	.headerHours{
+        display: none;
     }
 }
 
 @media screen and (max-width: 991px){
-    .headerHours{
-        display: none;
-    }
-
-    .main-menu{
-        display: none;
-    }
-
-    .mobile-menu{
-        display: block;
-    }
 
     .navbar-brand img{
-        height: 3em;
+        width: 25%
+		height: 90px;
     }
+	
+	.mobile-menu{
+        display: block;
+    }
+	
+	body{
+		padding-top: 4.26em;
+	}
 }
 
 @media screen and (max-width: 986px){
@@ -220,7 +235,13 @@
     }
 
     #queryString{
-        width: 78%;
+		margin-top: 1em;
+        width: 100%;
+    }
+	
+	#search-facet{
+		margin-top: 1em;
+        width: 100%;
     }
 
     .searchLinks{
@@ -236,24 +257,19 @@
     .tab-links a {
         margin: auto 4%;
     }
+	
 }
 
 @media screen and (max-width: 961px){
-    #queryString{
-        width: 77%
-    }
+
 }
 
 @media screen and (max-width: 920px){
-    #queryString{
-        width: 76%;
-    }
+
 }
 
 @media screen and (max-width: 883px){
-    #queryString{
-        width: 75%;
-    }
+
 }
 
 @media screen and (max-width: 849px){
@@ -264,15 +280,6 @@
 
     .mainBox{
         height: 30em;
-    }
-
-    #queryString{
-        width: 100%;
-    }
-
-    #search-facet{
-        margin-bottom: 1em;
-        width: 100%;
     }
 }
 
@@ -315,9 +322,7 @@
 }
 
 @media screen and (max-width: 569px){
-    #databasesBox, #researchBox{
-        background-position: center;
-    }
+	
 }
 
 @media screen and (max-width: 527px){

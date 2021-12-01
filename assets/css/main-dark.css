@@ -1,15 +1,16 @@
-@import url("http://library.anderson.edu/themes/niclib2021/assets/css/searchbox.css");
+@import url("http://library.anderson.edu/themes/niclib2021/assets/css/searchbox-dark.css");
 
+/* Main design templates */
 body{
     max-width: 100%;
-    background-color: var(--au-white);
+    background-color: var(--au-black);
     font-size: 18pt;
 	padding-top: 4.5em;
 }
 
 header{
 	width: 100%;
-	background: rgba(255,255,255,0.9);
+	background: rgba(0,0,0,0.8);
 	position: fixed;
 	top: 0;
 	border-bottom: var(--au-orange) 3px solid;
@@ -18,7 +19,7 @@ header{
 }
 
 a{
-    color: var(--au-black);
+    color: var(--au-accent-4);
     /*text-decoration: underline; -- Removed because the University doesn't use it */
     font-weight: bold;
     cursor: pointer;
@@ -26,7 +27,7 @@ a{
 }
 
 a:hover{
-    color: rgba(255,174,59,1);
+    color: var(--au-orange);
     text-decoration: none;
 }
 
@@ -38,6 +39,8 @@ footer{
 	z-index: 3;
 	/*box-shadow: 0 -9px 8px 0px rgba(0,0,0,0.4);
 	position: relative;*/
+	background-color: var(--au-black);
+	color: var(--au-accent-4);
 }
 
 /* Classes */
@@ -80,7 +83,7 @@ footer{
 
 .btn{
     background-color: var(--au-orange);
-    color: var(--au-white);
+    color: var(--au-black);
     font-weight: bold;
 }
 
@@ -104,15 +107,16 @@ footer{
 
 .buttonTitle{
     font-size: 3em;
-    color: var(--au-white);
+    color: var(--au-accent-4);
     text-shadow: 2px 2px #000000;
 }
 
 .carousel-inner {
 	border-top: .25em solid var(--au-orange);
 	border-bottom: var(--au-orange) solid .25em;
-	box-shadow: 6px 0px 4px 1px rgba(0,0,0,0.5), 8px 0px 35px 10px rgba(96,111,111,0.9),-9px 0px 8px 1px rgba(0,0,0,0.4);
+	box-shadow: 6px 0px 4px 1px rgba(96,111,111,0.5), 8px 0px 35px 10px rgba(93,110,127,0.8),-9px 0px 8px 1px rgba(96,111,111,0.4);
 	position: relative;
+	filter: brightness(.8) contrast(1.2);
 	
 }
 
@@ -192,20 +196,30 @@ footer{
 .dropdown-item {
     font-size: 1.5em;
 	text-align: center !important;
+	color: var(--au-accent-4);
+}
+
+.dropdown-item disabled {
+    font-size: 1.5em;
+	text-align: center !important;
+	color: var(--au-neutral-6) !important;
 }
 
 .dropdown-item:hover {
-	background-color: var(--au-neutral-1) !important;
+	background-color: var(--au-neutral-3) !important;
+	color: var(--au-accent-4);
 }
 
 .dropdown-menu {
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 4px 0 rgba(96,111,111,0.3), 0 4px 10px 0 rgba(96,111,111,0.3);
+	background-color: var(--au-neutral-5);
 }
 
 .dropdown-RR {
     font-size: 1.5em;
 	text-align: center;
 	padding-top: .25em;
+	color: var(--au-accent-1);
 }
 
 .emailForm{
@@ -238,6 +252,7 @@ footer{
     margin-left: 5%;
     text-align:left;
     float: left;
+	background-color: var(--au-black);
 }
 
 .libraryh3lp{
@@ -249,12 +264,13 @@ footer{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+	filter: brightness(.8) contrast(1.2);
     padding-top: 10em;
     padding-left: 5%;
 	padding-right: 3%;
     border-bottom: var(--au-orange) solid .25em;
 	height: 30em;
-	box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.5), 0 9px 25px 0 rgba(0,0,0,0.4);
+	box-shadow: 0 6px 4px 0 rgba(0,0,0,0.5), 0 9px 25px 0 rgba(0,0,0,0.4);
 	z-index: 3;
 	position: relative;
 }
@@ -288,6 +304,7 @@ footer{
     font-weight: 600;
     padding: 1em;
     display: block;
+	color: var(--au-accent-4);
 }
 
 .mobile-parent-menu{
@@ -297,17 +314,17 @@ footer{
 
 .navbar-toggler{
     font-size: 1em;
+	color: var(--au-accent-4);
 }
 
 .navbar-brand {
-	background: rgba(255,255,255,0.10);
-	background-image: url('https://library.anderson.edu/themes/niclib2021/assets/images/lib-logo-sm.png');
+	background: rgba(0,0,0,0.10);
+	background-image: url('../images/aulogosm_dark.png');
 	background-position: center center;
     background-repeat: no-repeat;
 	background-size: contain;
 	width: 16%;
 	height: 90px;
-}
 }
 
 .nav-link:focus {
@@ -324,6 +341,7 @@ footer{
     margin-right: 5%;
     text-align: right;
     float: right;
+	background-color: var(--au-black);
 }
 
 .seeThis{
@@ -391,6 +409,7 @@ footer{
     background-size: cover;
     background-position: 0% 40%;
     background-repeat: no-repeat;
+	filter: brightness(.8) contrast(1.2);
     padding: 2em;
     border-right: var(--au-gray) solid .1em;
 	text-align: center;
@@ -399,10 +418,10 @@ footer{
 }
 
 #databasesBox:hover{
-	opacity: 80%;
+	opacity: 70%;
 	transition: all .5s;
 	z-index: 2;
-	box-shadow:27px -1px 51px -14px rgba(251,224,182,0.9);
+	box-shadow:27px -1px 51px -14px rgba(96,111,111,0.9);
 	
 }
 
@@ -411,6 +430,7 @@ footer{
     background-size: cover;
     background-position: 100% 90%;
     background-repeat: no-repeat;
+	filter: brightness(.8) contrast(1.2);
     padding: 2em;
     border-left: var(--au-gray) solid .1em;
 	border-right: var(--au-gray) solid .1em;
@@ -420,10 +440,10 @@ footer{
 }
 
 #researchBox:hover{
-	opacity: 80%;
+	opacity: 70%;
 	transition: all .5s;
 	z-index: 2;
-	box-shadow:27px -1px 51px -14px rgba(251,224,182,0.9),-27px -1px 51px -14px rgba(251,224,182,0.9);
+	box-shadow:27px -1px 51px -14px rgba(96,111,111.9),-27px -1px 51px -14px rgba(96,111,111,0.9);
 }
 
 #browzineBox{
@@ -431,6 +451,7 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 53%;
+	filter: brightness(.8) contrast(1.2);
     padding: 2em;
     border-left: var(--au-gray) solid .1em;
 	text-align: center;
@@ -439,10 +460,10 @@ footer{
 }
 
 #browzineBox:hover{
-	opacity: 80%;
+	opacity: 70%;
 	transition: all .5s;
 	z-index: 2;
-	box-shadow:-27px -1px 51px -14px rgba(251,224,182,0.9);
+	box-shadow:-27px -1px 51px -14px rgba(96,111,111,0.9);
 }
 
 #chat-button{
@@ -450,19 +471,16 @@ footer{
     bottom: 2em;
     right: 2em;
     font-weight: bold;
-    border-radius: 1em;
-	border-color: rgb(165,172,175,.5);
 	z-index: 4;
-	box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 10px 1px rgba(96,111,111,0.4);
 	background-color: rgb(245,121,32,.5);
-	color: rgb(255,255,255,.5);
+	color: rgb(0,0,0,.5);
 }
 
 #chat-button:hover{
 	background-color: var(--au-orange);
-	color: var(--au-white);
-	border-color: transparent;
-	box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.6), 0 5px 15px 1px rgba(0, 0, 0, 0.6);
+	color: var(--au-black);
+	box-shadow: 0 4px 4px 1px rgba(96,111,111,0.6), 0 5px 15px 1px rgba(96,111,111,0.6);
 	transition: all .5s;
 }
 
@@ -476,7 +494,7 @@ footer{
 
 #lang-button:hover{
 	background-color: var(--au-orange);
-	color: var(--au-white);
+	color: var(--au-black);
 	border-color: transparent;
 	box-shadow: 0 3px 3px 0px rgba(0,0,0,0.6), 0 5px 15px 0px rgba(0,0,0,0.59);
 	transition: all .5s;
@@ -484,7 +502,7 @@ footer{
 
 #lang-button:focus{
 	background-color: var(--au-orange);
-	color: var(--au-white);
+	color: var(--au-black);
 	border-color: transparent;
 	box-shadow: 0 3px 3px 0px rgba(0,0,0,0.6), 0 5px 15px 0px rgba(0,0,0,0.59);
 	transition: all .5s;
@@ -492,7 +510,7 @@ footer{
 
 #light_switch:hover{
 	background-color: var(--au-orange);
-	color: var(--au-white);
+	color: var(--au-black);
 	border-color: transparent;
 	box-shadow: 0 3px 3px 0px rgba(0,0,0,0.6), 0 5px 15px 0px rgba(0,0,0,0.59);
 	transition: all .5s;
@@ -500,7 +518,7 @@ footer{
 
 #light_switch:focus{
 	background-color: var(--au-orange);
-	color: var(--au-white);
+	color: var(--au-black);
 	border-color: transparent;
 	box-shadow: 0 3px 3px 0px rgba(0,0,0,0.6), 0 5px 15px 0px rgba(0,0,0,0.59);
 	transition: all .5s;
@@ -517,6 +535,7 @@ footer{
 	background-image: url('https://library.anderson.edu/themes/niclib2021/assets/images/event banner.png');
 	background-size: cover;
 	background-position: center center;
+	filter: brightness(.8) contrast(1.2);
 	box-shadow: 0 6px 4px 1px rgba(0,0,0,0.5), 0 8px 35px 10px rgba(96,111,111,0.9),0 -9px 8px 1px rgba(0,0,0,0.4);
 	z-index: 3;
 }

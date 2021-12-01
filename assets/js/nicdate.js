@@ -175,13 +175,13 @@ function semesterHours(day) {
       operatingHours = '1:30pm - 11:00pm';
       break;
     case 5:
-      operatingHours = '8am - 5:00pm';
+      operatingHours = '8:00am - 5:00pm';
       break;
     case 6:
       operatingHours = 'Closed';
       break;
     default:
-      operatingHours = '8am - 11:00pm';
+      operatingHours = '8:00am - 11:00pm';
   }
 
   return operatingHours;
@@ -207,7 +207,7 @@ function midFallBreakHours(day) {
 
   switch (day) {
     case 3:
-      operatingHours = '7:45am - 5:00pm';
+      operatingHours = '8:00am - 5:00pm';
       break;
     default:
       operatingHours = 'Closed for Mid Fall Break';
@@ -221,7 +221,10 @@ function thanksgivingBreakHours(day) {
 
     switch (day) {
         case 2:
-            operatingHours = '7:45am - 5:00pm';
+            operatingHours = '8:00am - 5:00pm';
+            break;
+		case 3:
+            operatingHours = '8:00am - 5:00pm';
             break;
         default:
             operatingHours = 'Closed\nHappy Thanksgiving';
@@ -274,7 +277,7 @@ function displayHours(date) {
       hoursToday = '7:00pm - Midnight';
       break;
     case 'Day Before Good Friday':
-      hoursToday = '7:45am - 5:00pm';
+      hoursToday = '8:00am - 5:00pm';
       break;
     case 'Good Friday':
       hoursToday = 'Closed for Good Friday';

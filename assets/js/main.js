@@ -51,8 +51,42 @@ jQuery(document).ready(function($){
 
     $('.displayHours').append(displayHours());
 
-    $('#chat-button').click(function(){
-        ga('send', 'event', 'Special Button Click', 'Click', 'Floating Chat Button');
-        window.open('/contact', '_self');
-    })
+	!$(function(){
+		$('#chat-button').click(function(){ 
+			$("#iframeHolder").toggle();
+			if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe src="https://libraryh3lp.com/chat/nicref@chat.libraryh3lp.com?skin=29545" title="Chat box for website assistance" style="width: 100%; height: 100%"></iframe>');
+			}
+		});
+		$("#iframeHolder").hide();
+	});
+	
+	!$(function(){
+		$(document).on('click','.navbar-collapse.in',function(e) {
+		if( $(e.target).is('a:not(".dropdown-toggle")') ) {
+			$(this).collapse('hide');
+		}
+		});
+	});
+
+	const theme = document.querySelector("#theme-link");
+	!$(function(){
+		if (localStorage.getItem("hasvisited") == 1) {
+			theme.href = localStorage.getItem("colorscheme");
+		} else {
+			localStorage.setItem("hasvisited", 1);
+			theme.href = "http://library.anderson.edu/themes/niclib2021/assets/css/main.css";
+		}
+	});	
+	
+	$('#light_switch').click(function(){
+		// Swap out the URL for different sites (https://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/main.css)
+		if (theme.getAttribute("href") == "http://library.anderson.edu/themes/niclib2021/assets/css/main.css") {
+			theme.href = "http://library.anderson.edu/themes/niclib2021/assets/css/main-dark.css";
+		} else {
+			theme.href = "http://library.anderson.edu/themes/niclib2021/assets/css/main.css";
+		}
+		localStorage.setItem("colorscheme", theme.href);
+	});
+	
 })

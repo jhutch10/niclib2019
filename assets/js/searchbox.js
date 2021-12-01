@@ -3,8 +3,11 @@ const BOOKS_AND_MEDIA_FORMAT_STRING = "&format=Book&format=Msscr&format=Jrnl&for
 const ARTICLES = '638,1271,1275,1279,1697,1708,1721,1723,1725,1728,1734,1736,1834,1941,1953,1978,2006,2007,2237,2259,2260,2261,2264,2375,3006,3313,3863,3866,3879,3384';
 const ARTICLES_FORMAT_STRING = "&format=Artchap&format=Encyc";
 const SPANISH = "";
-const SPANISH_FORMAT_STRING = "&changedFacet=language&scope=&language=Spa";
+const SPANISH_FORMAT_STRING = "&language=Spa";
 const ES_EBOOKS_FORMAT_STRING = "&changedFacet=language&scope=wz%3A1274&language=Spa&subformat=Book%3A%3Abook_digital";
+const ES_ARTICLES_STRING = "&format=Artchap&format=Encyc&language=Spa";
+const FRENCH_FORMAT_STRING = "&language=Fre";
+const FR_ARTICLES_STRING = "&format=Artchap&format=Encyc&language=Fre";
 const DISCOVERY_URL = 'https://anderson.on.worldcat.org/v2/search?';
 
 jQuery(document).ready(function($){
@@ -33,7 +36,7 @@ jQuery(document).ready(function($){
                 break;
 			case 'spanish':
 				databaseList = BOOKS_AND_MEDIA + ',' + ARTICLES;
-				formats = BOOKS_AND_MEDIA_FORMAT_STRING + ARTICLES_FORMAT_STRING + SPANISH_FORMAT_STRING;
+				formats = SPANISH_FORMAT_STRING;
 				searchType = 'Spanish Language Only Search';
 				break;
 			case 'es_ebooks':
@@ -43,8 +46,18 @@ jQuery(document).ready(function($){
 				break;
 			case 'es_articles':
 				databaseList = ARTICLES;
-				formats = SPANISH_FORMAT_STRING + ARTICLES_FORMAT_STRING;
+				formats = ES_ARTICLES_STRING;
 				searchType = 'Spanish Articles'
+				break;
+			case 'french':
+				databaseList = BOOKS_AND_MEDIA + ',' + ARTICLES;
+				formats = FRENCH_FORMAT_STRING;
+				searchType = 'French Language Only Search';
+				break;
+			case 'fr_articles':
+				databaseList = ARTICLES;
+				formats = FR_ARTICLES_STRING;
+				searchType = 'French Articles'
 				break;
         }
 		
