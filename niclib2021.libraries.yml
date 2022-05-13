@@ -16,12 +16,16 @@ global-css:
             assets/css/main.css: {}
             assets/css/searchbox.css: {}
             assets/css/media-queries.css: {}
+            assets/vendor/leaflet-search-3.0.2/src/leaflet-search.css: {}
+            assets/vendor/leaflet/leaflet.css: {}
 
 global-js:
     js:
         assets/js/main.js: {}
         assets/js/searchbox.js: {}
         assets/js/nicdate.js: {}
+        assets/vendor/leaflet/leaflet.js: {}
+        assets/vendor/leaflet-search-3.0.2/src/leaflet-search.js: {}
     dependencies:
         - core/jquery
 

@@ -1,4 +1,4 @@
-@import url("http://library.anderson.edu/themes/niclib2021/assets/css/searchbox.css");
+@import url("http://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/searchbox.css");
 
 body{
     max-width: 100%;
@@ -86,7 +86,7 @@ footer{
 
 .btn-group{
 	position: fixed;
-    bottom: 1em;
+    bottom: 2em;
     left: 1em;
     font-weight: bold;
 	border-color: rgb(165,172,175);
@@ -448,11 +448,11 @@ footer{
 #chat-button{
     position: fixed;
     bottom: 2em;
-    right: 2em;
+    right: 1em;
     font-weight: bold;
     border-radius: 1em;
 	border-color: rgb(165,172,175,.5);
-	z-index: 4;
+	z-index: 5;
 	box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.4);
 	background-color: rgb(245,121,32,.5);
 	color: rgb(255,255,255,.5);
@@ -527,4 +527,16 @@ footer{
 	float: left;
 	height: 206px;
 	z-index: 3;
+}
+
+#sur-button{
+    position: fixed;
+    bottom: .25em;
+    left: .25em;
+    font-weight: bold;
+    border-radius: 1em;
+	border-color: var(--au-white);
+	z-index: 3;
+	background-color: var(--au-orange);
+	color: var(--au-white);
 }

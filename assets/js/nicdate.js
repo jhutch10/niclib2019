@@ -196,7 +196,7 @@ function breakHours(day) {
       operatingHours = 'Closed';
       break;
     default:
-      operatingHours = '8:00am - 5:00pm';
+      operatingHours = '8:00am - 4:00pm';
   }
 
   return operatingHours;
@@ -271,10 +271,10 @@ function displayHours(date) {
       hoursToday = 'Closed for New Years Day';
       break;
     case 'MLK Day':
-      hoursToday = '5pm - Midnight';
+      hoursToday = '5pm - 11:00pm';
       break;
     case 'End of Spring Break':
-      hoursToday = '7:00pm - Midnight';
+      hoursToday = '7:00pm - 11:00pm';
       break;
     case 'Day Before Good Friday':
       hoursToday = '8:00am - 5:00pm';

@@ -1,4 +1,4 @@
-@import url("http://library.anderson.edu/themes/niclib2021/assets/css/searchbox-dark.css");
+@import url("http://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/searchbox-dark.css");
 
 /* Main design templates */
 body{
@@ -6,6 +6,7 @@ body{
     background-color: var(--au-black);
     font-size: 18pt;
 	padding-top: 4.5em;
+	color: var(--au-gray);
 }
 
 header{
@@ -73,6 +74,7 @@ footer{
 .box-hours tfoot{
     font-size: .75em;
     font-style: italic;
+	color: var(--au-gray);
 }
 
 .bottomBox{
@@ -89,7 +91,7 @@ footer{
 
 .btn-group{
 	position: fixed;
-    bottom: 1em;
+    bottom: 2em;
     left: 1em;
     font-weight: bold;
 	border-color: rgb(165,172,175);
@@ -159,6 +161,7 @@ footer{
 
 .contentContent p{
     margin-top: .5em;
+	color: var(--au-gray);
 }
 
 .contentImage{
@@ -167,16 +170,19 @@ footer{
 
 .contentList{
     margin: 1em auto;
+	color: var(--au-gray);
 }
 
 .contentList dt{
     border: 1px solid rgba(195, 207, 220, 0.7);
     padding: 2em;
     background-color: rgba(195, 207, 220, 0.2);
+	color: var(--au-gray);
 }
 
 .contentList dd{
     padding: 2em;
+	color: var(--au-gray);
 }
 
 .contentTitle{
@@ -335,6 +341,7 @@ footer{
 .questionGroup{
     margin: 1em auto;
     clear: both;
+	color: var(--au-gray);
 }
 
 .right{
@@ -345,9 +352,10 @@ footer{
 }
 
 .seeThis{
-    background-color: var(--au-neutral-1);
+    background-color: var(--au-neutral-3);
     padding: 1em;
     text-align: center;
+	color: var(--au-accent-4);
 }
 
 .staff-img{
@@ -378,6 +386,7 @@ footer{
 
 .table td, .table th{
     border-top: none;
+	color: var(--au-gray);
 }
 
 .york-presenters{
@@ -469,7 +478,7 @@ footer{
 #chat-button{
     position: fixed;
     bottom: 2em;
-    right: 2em;
+    right: 1em;
     font-weight: bold;
 	z-index: 4;
 	box-shadow: 0 1px 10px 1px rgba(96,111,111,0.4);
@@ -546,4 +555,16 @@ footer{
 	float: left;
 	height: 206px;
 	z-index: 3;
+}
+
+#sur-button{
+    position: fixed;
+    bottom: .25em;
+    left: .25em;
+    font-weight: bold;
+    border-radius: 1em;
+	border-color: var(--au-white);
+	z-index: 3;
+	background-color: var(--au-orange);
+	color: var(--au-white);
 }

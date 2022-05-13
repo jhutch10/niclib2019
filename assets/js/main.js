@@ -71,20 +71,20 @@ jQuery(document).ready(function($){
 
 	const theme = document.querySelector("#theme-link");
 	!$(function(){
-		if (localStorage.getItem("hasvisited") == 1) {
+		if (localStorage.getItem("hasvisited") !== null) {
 			theme.href = localStorage.getItem("colorscheme");
 		} else {
 			localStorage.setItem("hasvisited", 1);
-			theme.href = "http://library.anderson.edu/themes/niclib2021/assets/css/main.css";
+			theme.href = "http://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/main.css";
 		}
 	});	
 	
 	$('#light_switch').click(function(){
-		// Swap out the URL for different sites (https://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/main.css)
-		if (theme.getAttribute("href") == "http://library.anderson.edu/themes/niclib2021/assets/css/main.css") {
-			theme.href = "http://library.anderson.edu/themes/niclib2021/assets/css/main-dark.css";
+		// Swap out the URL for different sites (https://library.anderson.edu/themes/niclib2021/assets/css/main.css)
+		if (theme.getAttribute("href") == "http://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/main.css") {
+			theme.href = "http://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/main-dark.css";
 		} else {
-			theme.href = "http://library.anderson.edu/themes/niclib2021/assets/css/main.css";
+			theme.href = "http://libtest.anderson.edu/drupal/drupal-8/themes/niclib2021/assets/css/main.css";
 		}
 		localStorage.setItem("colorscheme", theme.href);
 	});

@@ -9,7 +9,6 @@ const ES_ARTICLES_STRING = "&format=Artchap&format=Encyc&language=Spa";
 const FRENCH_FORMAT_STRING = "&language=Fre";
 const FR_ARTICLES_STRING = "&format=Artchap&format=Encyc&language=Fre";
 const DISCOVERY_URL = 'https://anderson.on.worldcat.org/v2/search?';
-
 jQuery(document).ready(function($){
     $("#catalog-search").submit(function(e){
         e.preventDefault();
@@ -61,8 +60,15 @@ jQuery(document).ready(function($){
 				break;
         }
 		
-		//ga('send', 'event', 'Catalog Search', 'Search', searchType);
-
         window.open(DISCOVERY_URL + '&databaseList=' + databaseList + '&queryString=' + queryString + formats, '_blank');
     })
 })
+
+//commented out because it doesn't work currently
+//const fs = require("fs");
+//let queryString = "";
+//$("#catalog-search").submit(function(e){
+//      e.preventDefault();
+//      let queryString = $(this).children('#queryString').val();
+//		fs.appendFileSync("http://libtest.anderson.edu/drupal/drupal-8/sites/default/files/search/inputlog.txt", queryString + "\n");
+//});
